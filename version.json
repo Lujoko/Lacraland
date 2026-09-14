@@ -1,0 +1,10 @@
+{
+  "version": "1.21.1",
+  "neoforge": "21.1.0",
+  "files": [
+    {
+      "path": "archivos_servidor/options.txt",
+      "url": "https://raw.githubusercontent.com/Lujoko/Lacraland/main/archivos_servidor/options.txt"
+    }
+  ]
+}
