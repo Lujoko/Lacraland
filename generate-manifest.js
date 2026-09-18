@@ -44,7 +44,7 @@ const files = scanDirectory(MODPACK_DIR);
 
 const manifest = {
   version: "1.0.0",
-  neoforgeVersion: "21.1.64",
+  neoforgeVersion: "21.1.249",
   files: files
 };
 
