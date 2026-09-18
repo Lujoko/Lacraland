@@ -1,8 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
-const fs = require('fs-extra');
-const { exec } = require('child_process');
-const axios = require('axios');
 const { Auth } = require('msmc');
 const { Client } = require('minecraft-launcher-core');
 const { syncModpack } = require('./sync');
@@ -47,104 +44,64 @@ function sendStatus(msg) {
     }
 }
 
-// Instala el jar/json oficial de NeoForge 1.21.1
-async function installNeoForgeSilently(gameDir, targetVersion) {
-    const versionFolder = path.join(gameDir, 'versions', `neoforge-${targetVersion}`);
-    
-    if (fs.existsSync(versionFolder)) {
-        return `neoforge-${targetVersion}`;
-    }
-
-    sendStatus(`Descargando instalador de NeoForge ${targetVersion}...`);
-    const installerUrl = `https://maven.neoforged.net/releases/net/neoforged/neoforge/${targetVersion}/neoforge-${targetVersion}-installer.jar`;
-    const tempInstallerPath = path.join(app.getPath('temp'), `neoforge-${targetVersion}-installer.jar`);
-
-    const response = await axios({
-        method: 'get',
-        url: installerUrl,
-        responseType: 'arraybuffer'
-    });
-
-    await fs.writeFile(tempInstallerPath, response.data);
-
-    sendStatus(`Instalando NeoForge ${targetVersion}...`);
-
-    return new Promise((resolve, reject) => {
-        exec(`java -jar "${tempInstallerPath}" --install-client "${gameDir}"`, (error) => {
-            fs.removeSync(tempInstallerPath);
-            if (error) {
-                return reject(new Error(`Error instalando NeoForge: ${error.message}`));
-            }
-            sendStatus('NeoForge instalado con éxito.');
-            resolve(`neoforge-${targetVersion}`);
-        });
-    });
-}
-
-async function handleLaunch(authOptions) {
+async function handleLaunch(authOptions, ramAmount = "4G") {
     try {
         const gameDir = path.join(app.getPath('userData'), '.minecraft');
 
-        // 1. Sincronizar mods desde GitHub
-        const neoforgeVersion = await syncModpack(gameDir, (statusMessage) => {
+        const customVersion = await syncModpack(gameDir, (statusMessage) => {
             sendStatus(statusMessage);
-        }) || "21.1.249";
+        }) || "neoforge-21.1.249";
 
-        // 2. Descargar cliente Vanilla 1.21.1 (MCLC baja el JSON/JAR automáticos)
-        sendStatus('Preparando versión Vanilla 1.21.1...');
-        const vanillaOpts = {
+        // Banderas JVM requeridas por NeoForge 1.21.1 / Java 21
+        const jvmFlags = [
+            '--add-opens=java.base/java.lang=ALL-UNNAMED',
+            '--add-opens=java.base/java.lang.invoke=ALL-UNNAMED',
+            '--add-opens=java.base/java.util=ALL-UNNAMED',
+            '--add-opens=java.base/java.io=ALL-UNNAMED',
+            '--add-opens=java.base/java.net=ALL-UNNAMED'
+        ];
+
+        const opts = {
             authorization: authOptions,
             root: gameDir,
-            version: {
-                number: "1.21.1",
-                type: "release"
-            },
-            memory: { max: "2G", min: "1G" }
-        };
-
-        // 3. Descargar dependencias e instalar NeoForge
-        const customVersionName = await installNeoForgeSilently(gameDir, neoforgeVersion);
-
-        // 4. Iniciar la versión personalizada instalada
-        const finalOpts = {
-            authorization: authOptions,
-            root: gameDir,
+            customArgs: jvmFlags,
             version: {
                 number: "1.21.1",
                 type: "release",
-                custom: customVersionName
+                custom: customVersion
             },
             memory: {
-                max: "6G",
-                min: "2G"
+                max: ramAmount,
+                min: "1G"
             }
         };
 
-        sendStatus('Iniciando Minecraft NeoForge...');
-        await launcher.launch(finalOpts);
+        sendStatus(`Iniciando Minecraft NeoForge con ${ramAmount} de RAM...`);
+        await launcher.launch(opts);
 
     } catch (err) {
         console.error('Error al iniciar el juego:', err);
         if (win && !win.isDestroyed()) {
-            win.webContents.send('launcher-error', err.message || 'Error durante la preparación.');
+            win.webContents.send('launcher-error', err.message || 'Error durante el lanzamiento.');
         }
     }
 }
 
-// Inicios de sesión
-ipcMain.on('login-offline', async (event, username) => {
+// Escuchar inicio de sesión No-Premium
+ipcMain.on('login-offline', async (event, data) => {
     const authOptions = {
         access_token: "offline",
         client_token: "offline",
         uuid: "offline",
-        name: username || "Jugador",
+        name: data.username || "Jugador",
         user_properties: "{}"
     };
 
-    await handleLaunch(authOptions);
+    await handleLaunch(authOptions, data.ram);
 });
 
-ipcMain.on('login-microsoft', async () => {
+// Escuchar inicio de sesión Microsoft
+ipcMain.on('login-microsoft', async (event, data) => {
     try {
         const authManager = new Auth("select_account");
 
@@ -162,7 +119,7 @@ ipcMain.on('login-microsoft', async () => {
         const token = await xboxManager.getMinecraft();
         const authOptions = token.mclc();
 
-        await handleLaunch(authOptions);
+        await handleLaunch(authOptions, data.ram);
 
     } catch (err) {
         console.error('Error en autenticación de Microsoft:', err);

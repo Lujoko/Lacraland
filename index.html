@@ -1,228 +1,310 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Lacraland Launcher</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      background: url('./1.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      position: relative;
-      overflow: hidden;
-    }
+<meta charset="UTF-8">
+<title>Lacraland Launcher</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('./1.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
 
-    /* --- BOTONES DE SELECCIÓN (IZQUIERDA - Aumentado +2%) --- */
-    .selector-container {
-      position: absolute;
-      bottom: 22px;
-      left: 26px;
-      display: flex;
-      flex-direction: column;
-      gap: 8.2px;
-      background: rgba(0, 0, 0, 0.35);
-      padding: 8.2px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(4px);
-    }
-    .type-btn {
-      padding: 8.2px 14.3px;
-      background: rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #ddd;
-      font-weight: 600;
-      font-size: 12.2px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      text-align: left;
-    }
-    .type-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
-      color: #fff;
-    }
-    .type-btn.active {
-      background: #ff5722;
-      color: white;
-      border-color: #ff5722;
-      box-shadow: 0 2px 8px rgba(255, 87, 34, 0.4);
-    }
+/* --- SELECTOR DE RAM (ARRIBA DERECHA) --- */
+.ram-container {
+    position: absolute;
+    top: 22px;
+    right: 26px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 600;
+}
+.ram-container select {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+.ram-container select:focus {
+    border-color: #ff5722;
+}
 
-    /* --- FORMULARIO Y ACCIONES (DERECHA - Aumentado +2%) --- */
-    .right-controls {
-      position: absolute;
-      bottom: 22px;
-      right: 26px;
-      width: 275px; /* Aumentado exactamente un 2% (270px -> 275.4px) */
-      background: rgba(0, 0, 0, 0.35);
-      padding: 10.2px 14.3px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(4px);
-    }
-    .section {
-      display: none;
-    }
-    .section.active {
-      display: block;
-    }
+/* --- BOTONES DE SELECCIÓN (IZQUIERDA) --- */
+.selector-container {
+    position: absolute;
+    bottom: 22px;
+    left: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 8.2px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 8.2px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+}
+.type-btn {
+    padding: 8.2px 14.3px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ddd;
+    font-weight: 600;
+    font-size: 12.2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+.type-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+.type-btn.active {
+    background: #ff5722;
+    color: white;
+    border-color: #ff5722;
+    box-shadow: 0 2px 8px rgba(255, 87, 34, 0.4);
+}
 
-    input {
-      width: 100%;
-      padding: 9.2px;
-      margin-bottom: 8.2px;
-      background: rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #fff;
-      border-radius: 6px;
-      font-size: 13.3px;
-      text-align: center;
-      outline: none;
-    }
-    input:focus {
-      border-color: #ff5722;
-      background: rgba(0, 0, 0, 0.75);
-    }
+/* --- FORMULARIO Y ACCIONES (DERECHA) --- */
+.right-controls {
+    position: absolute;
+    bottom: 22px;
+    right: 26px;
+    width: 275px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 10.2px 14.3px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 9.2px;
+    margin-bottom: 8.2px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13.3px;
+    text-align: center;
+    outline: none;
+}
+input:focus {
+    border-color: #ff5722;
+    background: rgba(0, 0, 0, 0.75);
+}
+button.action-btn {
+    width: 100%;
+    padding: 10.2px;
+    background: #ff5722;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14.3px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button.action-btn:hover {
+    background: #e64a19;
+}
 
-    button.action-btn {
-      width: 100%;
-      padding: 10.2px;
-      background: #ff5722;
-      border: none;
-      color: white;
-      font-weight: bold;
-      font-size: 14.3px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    button.action-btn:hover {
-      background: #e64a19;
-    }
-
-    /* --- OVERLAY DE CARGA --- */
-    #loader-container {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.75);
-      padding: 20px 35px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(6px);
-    }
-    .spinner {
-      border: 3px solid rgba(255, 255, 255, 0.1);
-      border-top: 3px solid #ffcc00;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 10px auto;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    #status {
-      color: #eee;
-      font-size: 13px;
-      margin: 0;
-    }
-  </style>
+/* --- OVERLAY DE CARGA --- */
+#loader-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px 35px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+}
+.spinner {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid #ffcc00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#status {
+    color: #eee;
+    font-size: 13px;
+    margin: 0;
+}
+</style>
 </head>
 <body>
 
-  <!-- Selector (Izquierda) -->
-  <div class="selector-container" id="selector-box">
+<!-- Selector de RAM (Arriba Derecha) -->
+<div class="ram-container" id="ram-box">
+    <label for="ram-select">RAM:</label>
+    <select id="ram-select">
+        <option value="2G">2 GB</option>
+        <option value="4G">4 GB</option>
+        <option value="6G">6 GB</option>
+        <option value="8G">8 GB</option>
+        <option value="10G">10 GB</option>
+        <option value="12G">12 GB</option>
+        <option value="16G">16 GB</option>
+    </select>
+</div>
+
+<!-- Selector (Izquierda) -->
+<div class="selector-container" id="selector-box">
     <button class="type-btn active" onclick="switchMode('offline')" id="btn-mode-offline">🎮 No-Premium</button>
     <button class="type-btn" onclick="switchMode('microsoft')" id="btn-mode-ms">🔐 Premium (Microsoft)</button>
-  </div>
+</div>
 
-  <!-- Formulario (Derecha) -->
-  <div class="right-controls" id="controls-box">
+<!-- Formulario (Derecha) -->
+<div class="right-controls" id="controls-box">
     <!-- Sección No-Premium -->
     <div id="section-offline" class="section active">
-      <input type="text" id="username" placeholder="Tu Nickname (Ej: Lujoko)" />
-      <button class="action-btn" id="play-offline-btn">JUGAR (OFFLINE)</button>
+        <input type="text" id="username" placeholder="Tu Nickname (Ej: Lujoko)" />
+        <button class="action-btn" id="play-offline-btn">JUGAR (OFFLINE)</button>
     </div>
 
     <!-- Sección Premium Microsoft -->
     <div id="section-microsoft" class="section">
-      <button class="action-btn" id="play-ms-btn" style="background: #00a4ef;">LOGIN MICROSOFT</button>
+        <button class="action-btn" id="play-ms-btn" style="background: #00a4ef;">LOGIN MICROSOFT</button>
     </div>
-  </div>
+</div>
 
-  <!-- Overlay de Carga -->
-  <div id="loader-container">
+<!-- Overlay de Carga -->
+<div id="loader-container">
     <div class="spinner"></div>
     <p id="status">Cargando...</p>
-  </div>
+</div>
 
-  <script>
-    const { ipcRenderer } = require('electron');
+<script>
+const { ipcRenderer } = require('electron');
 
-    function switchMode(mode) {
-      if (mode === 'offline') {
+const ramSelect = document.getElementById('ram-select');
+const usernameInput = document.getElementById('username');
+
+// Cargar RAM y Nickname guardados al abrir el launcher
+window.addEventListener('DOMContentLoaded', () => {
+    const savedRam = localStorage.getItem('selected_ram');
+    if (savedRam) {
+        ramSelect.value = savedRam;
+    } else {
+        ramSelect.value = '4G'; // Valor por defecto si es la primera vez
+    }
+
+    const savedUser = localStorage.getItem('saved_username');
+    if (savedUser) {
+        usernameInput.value = savedUser;
+    }
+});
+
+// Guardar preferencia al cambiar la RAM en el desplegable
+ramSelect.addEventListener('change', () => {
+    localStorage.setItem('selected_ram', ramSelect.value);
+});
+
+function switchMode(mode) {
+    if (mode === 'offline') {
         document.getElementById('btn-mode-offline').classList.add('active');
         document.getElementById('btn-mode-ms').classList.remove('active');
         document.getElementById('section-offline').classList.add('active');
         document.getElementById('section-microsoft').classList.remove('active');
-      } else {
+    } else {
         document.getElementById('btn-mode-ms').classList.add('active');
         document.getElementById('btn-mode-offline').classList.remove('active');
         document.getElementById('section-microsoft').classList.add('active');
         document.getElementById('section-offline').classList.remove('active');
-      }
     }
+}
 
-    function showLoading(message) {
-      document.getElementById('selector-box').style.display = 'none';
-      document.getElementById('controls-box').style.display = 'none';
-      document.getElementById('loader-container').style.display = 'block';
-      document.getElementById('status').innerText = message;
-    }
+function showLoading(message) {
+    document.getElementById('selector-box').style.display = 'none';
+    document.getElementById('controls-box').style.display = 'none';
+    document.getElementById('ram-box').style.display = 'none';
+    document.getElementById('loader-container').style.display = 'block';
+    document.getElementById('status').innerText = message;
+}
 
-    function hideLoading() {
-      document.getElementById('selector-box').style.display = 'flex';
-      document.getElementById('controls-box').style.display = 'block';
-      document.getElementById('loader-container').style.display = 'none';
-    }
+function hideLoading() {
+    document.getElementById('selector-box').style.display = 'flex';
+    document.getElementById('controls-box').style.display = 'block';
+    document.getElementById('ram-box').style.display = 'flex';
+    document.getElementById('loader-container').style.display = 'none';
+}
 
-    // Botón No-Premium
-    document.getElementById('play-offline-btn').addEventListener('click', () => {
-      const username = document.getElementById('username').value.trim();
-      if (!username) {
+// Botón No-Premium
+document.getElementById('play-offline-btn').addEventListener('click', () => {
+    const username = usernameInput.value.trim();
+    const ram = ramSelect.value;
+    if (!username) {
         alert('Por favor ingresa tu nickname');
         return;
-      }
-      showLoading('Verificando archivos y arrancando Minecraft...');
-      ipcRenderer.send('login-offline', username);
-    });
+    }
+    
+    // Guardar nickname y RAM elegida
+    localStorage.setItem('saved_username', username);
+    localStorage.setItem('selected_ram', ram);
 
-    // Botón Microsoft
-    document.getElementById('play-ms-btn').addEventListener('click', () => {
-      showLoading('Esperando autenticación de Microsoft...');
-      ipcRenderer.send('login-microsoft');
-    });
+    showLoading('Verificando archivos y arrancando Minecraft...');
+    ipcRenderer.send('login-offline', { username, ram });
+});
 
-    // En caso de error devuelto por main.js
-    ipcRenderer.on('launcher-error', (event, text) => {
-      hideLoading();
-      alert(text);
-    });
-  </script>
+// Botón Microsoft
+document.getElementById('play-ms-btn').addEventListener('click', () => {
+    const ram = ramSelect.value;
+    localStorage.setItem('selected_ram', ram);
+
+    showLoading('Esperando autenticación de Microsoft...');
+    ipcRenderer.send('login-microsoft', { ram });
+});
+
+ipcRenderer.on('launcher-error', (event, text) => {
+    hideLoading();
+    alert(text);
+});
+
+ipcRenderer.on('progress', (event, data) => {
+    if (data && data.detail) {
+        document.getElementById('status').innerText = data.detail;
+    }
+});
+</script>
 </body>
 </html>
