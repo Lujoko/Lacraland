@@ -1,42 +1,37 @@
+const fs = require('fs');
 const path = require('path');
-const fs = require('fs-extra');
+const { execSync } = require('child_process');
 
-async function syncModpack(gameDir, onProgress) {
-    try {
-        const rootDir = __dirname;
+// Enlace HTTPS a tu repositorio donde subiste la carpeta del cliente
+const REPO_URL = "https://github.com/Lujoko/Lacraland.git";
 
-        // 1. Copiar carpeta de mods
-        const sourceMods = path.join(rootDir, 'modpack');
-        const targetMods = path.join(gameDir, 'mods');
+async function syncModpack(gameDir, statusCallback) {
+    statusCallback("Sincronizando archivos desde GitHub...");
 
-        if (fs.existsSync(sourceMods)) {
-            if (onProgress) onProgress('Sincronizando mods...');
-            await fs.copy(sourceMods, targetMods, { overwrite: true });
-        }
-
-        // 2. Copiar carpeta de versión NeoForge
-        const sourceVersion = path.join(rootDir, 'neoforge-21.1.249');
-        const targetVersion = path.join(gameDir, 'versions', 'neoforge-21.1.249');
-
-        if (fs.existsSync(sourceVersion)) {
-            if (onProgress) onProgress('Copiando perfil de NeoForge...');
-            await fs.copy(sourceVersion, targetVersion, { overwrite: true });
-        }
-
-        // 3. Copiar librerías de NeoForge (soluciona el error Module cpw.mods.securejarhandler not found)
-        const sourceLibs = path.join(rootDir, 'libraries');
-        const targetLibs = path.join(gameDir, 'libraries');
-
-        if (fs.existsSync(sourceLibs)) {
-            if (onProgress) onProgress('Sincronizando librerías de NeoForge...');
-            await fs.copy(sourceLibs, targetLibs, { overwrite: false });
-        }
-
-        return "neoforge-21.1.249";
-    } catch (error) {
-        console.error('Error durante la sincronización:', error);
-        throw error;
+    if (!fs.existsSync(gameDir)) {
+        fs.mkdirSync(gameDir, { recursive: true });
     }
+
+    const gitDir = path.join(gameDir, '.git');
+
+    try {
+        if (!fs.existsSync(gitDir)) {
+            statusCallback("Descargando modpack completo por primera vez...");
+            execSync(`git clone ${REPO_URL} "${gameDir}"`, { stdio: 'inherit' });
+        } else {
+            statusCallback("Buscando actualizaciones en GitHub...");
+            execSync(`git -C "${gameDir}" pull`, { stdio: 'inherit' });
+        }
+    } catch (err) {
+        console.error("Error al sincronizar con Git:", err);
+        statusCallback("Error de sincronización, intentando iniciar versión local...");
+    }
+
+    statusCallback("Sincronización completada.");
+
+    return {
+        versionName: "neoforge-21.1.249"
+    };
 }
 
 module.exports = { syncModpack };

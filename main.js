@@ -48,23 +48,31 @@ async function handleLaunch(authOptions, ramAmount = "4G") {
     try {
         const gameDir = path.join(app.getPath('userData'), '.minecraft');
 
-        const customVersion = await syncModpack(gameDir, (statusMessage) => {
+        const syncResult = await syncModpack(gameDir, (statusMessage) => {
             sendStatus(statusMessage);
-        }) || "neoforge-21.1.249";
+        });
 
-        // Banderas JVM requeridas por NeoForge 1.21.1 / Java 21
+        const customVersion = syncResult.versionName || "neoforge-21.1.249";
+        const modulePath = syncResult.modulePath;
+
+        // Banderas de la JVM y reemplazo explícito del launchTarget
         const jvmFlags = [
+            `--module-path=${modulePath}`,
+            '--add-modules=ALL-MODULE-PATH',
             '--add-opens=java.base/java.lang=ALL-UNNAMED',
             '--add-opens=java.base/java.lang.invoke=ALL-UNNAMED',
+            '--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler',
             '--add-opens=java.base/java.util=ALL-UNNAMED',
             '--add-opens=java.base/java.io=ALL-UNNAMED',
-            '--add-opens=java.base/java.net=ALL-UNNAMED'
+            '--add-opens=java.base/java.net=ALL-UNNAMED',
+            '--add-exports=java.base/sun.security.util=ALL-UNNAMED'
         ];
 
         const opts = {
             authorization: authOptions,
             root: gameDir,
             customArgs: jvmFlags,
+            // Sobrescribimos el objetivo explícito para MCLC asignando un Custom Version limpio
             version: {
                 number: "1.21.1",
                 type: "release",
@@ -74,6 +82,16 @@ async function handleLaunch(authOptions, ramAmount = "4G") {
                 max: ramAmount,
                 min: "1G"
             }
+        };
+
+        // Modificamos el listener interno del cliente justo antes del arranque para sustituir 'forgeclient' por 'neoforgeclient'
+        launcher.getArgs = function (options) {
+            const args = Client.prototype.getArgs.call(this, options);
+            const index = args.indexOf('forgeclient');
+            if (index !== -1) {
+                args[index] = 'neoforgeclient';
+            }
+            return args;
         };
 
         sendStatus(`Iniciando Minecraft NeoForge con ${ramAmount} de RAM...`);
