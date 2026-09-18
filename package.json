@@ -1,0 +1,19 @@
+{
+  "name": "LACRALAND",
+  "version": "1.0.0",
+  "description": "Launcher personalizado para LacraLand",
+  "main": "main.js",
+  "scripts": {
+    "start": "/usr/bin/electron . --disable-gpu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lujoko/Lacraland.git"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "fs-extra": "^11.4.0",
+    "minecraft-launcher-core": "^3.0.3",
+    "msmc": "^5.0.5"
+  }
+}

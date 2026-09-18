@@ -1,0 +1,122 @@
+const { app, BrowserWindow, ipcMain } = require('electron');
+const path = require('path');
+const { Auth } = require('msmc');
+const { Client } = require('minecraft-launcher-core');
+const { syncModpack } = require('./sync');
+
+let win;
+const launcher = new Client();
+
+function createWindow() {
+    win = new BrowserWindow({
+        width: 900,
+        height: 600,
+        resizable: false,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        }
+    });
+
+    win.loadFile('index.html');
+}
+
+app.whenReady().then(createWindow);
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+});
+
+// Eventos de Minecraft Launcher Core (Progreso y Logs)
+launcher.on('debug', (e) => console.log(e));
+launcher.on('data', (e) => console.log(e));
+
+launcher.on('progress', (e) => {
+    if (win && !win.isDestroyed()) {
+        win.webContents.send('progress', e);
+    }
+});
+
+// Función centralizada para sincronizar mods e iniciar Minecraft
+async function handleLaunch(authOptions) {
+    try {
+        const gameDir = path.join(app.getPath('userData'), '.minecraft');
+
+        // 1. Sincroniza los mods antes de arrancar
+        const neoforgeVersion = await syncModpack(gameDir, (statusMessage) => {
+            if (win && !win.isDestroyed()) {
+                win.webContents.send('progress', { type: 'status', detail: statusMessage });
+            }
+        });
+
+        // 2. Configuración de arranque de Minecraft
+        const opts = {
+            authorization: authOptions,
+            root: gameDir,
+            version: {
+                number: "1.21.1",
+                type: "release",
+                custom: `neoforge-${neoforgeVersion}`
+            },
+            memory: {
+                max: "6G",
+                min: "2G"
+            }
+        };
+
+        // 3. Iniciar el juego
+        await launcher.launch(opts);
+
+    } catch (err) {
+        console.error('Error al iniciar el juego:', err);
+        if (win && !win.isDestroyed()) {
+            win.webContents.send('launcher-error', err.message);
+        }
+    }
+}
+
+// Handler de inicio de sesión No-Oficial (Offline)
+ipcMain.on('login-offline', async (event, username) => {
+    const authOptions = {
+        access_token: "offline",
+        client_token: "offline",
+        uuid: "offline",
+        name: username || "Jugador",
+        user_properties: "{}"
+    };
+
+    await handleLaunch(authOptions);
+});
+
+// Handler de inicio de sesión Oficial (Microsoft)
+ipcMain.on('login-microsoft', async () => {
+    try {
+        const authManager = new Auth("select_account");
+
+        // Forzamos el uso del motor de Electron y la ventana emergente
+        const xboxManager = await authManager.launch("electron", {
+            width: 500,
+            height: 650,
+            resizable: false,
+            center: true,
+            browserWindow: {
+                parent: win,
+                modal: true
+            }
+        });
+
+        const token = await xboxManager.getMinecraft();
+        const authOptions = token.mclc();
+
+        await handleLaunch(authOptions);
+
+    } catch (err) {
+        console.error('Error en autenticación de Microsoft:', err);
+        if (win && !win.isDestroyed()) {
+            win.webContents.send('launcher-error', 'Falló el inicio de sesión con Microsoft.');
+        }
+    }
+});
+
