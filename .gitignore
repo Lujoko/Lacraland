@@ -3,8 +3,14 @@ dist/
 *.save
 *.log
 
-# Datos privados, mundos y archivos temporales de Minecraft
+# Carpetas pesadas del sistema de Minecraft (MCLC las gestiona)
+assets/
+libraries/
+versions/
+
+# Archivos temporales y datos sensibles
 launcher_accounts.json
+launcher_msa_credentials.bin
 usercache.json
 usernamecache.json
 saves/
