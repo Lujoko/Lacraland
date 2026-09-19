@@ -2,3 +2,12 @@ node_modules/
 dist/
 *.save
 *.log
+
+# Datos privados, mundos y archivos temporales de Minecraft
+launcher_accounts.json
+usercache.json
+usernamecache.json
+saves/
+logs/
+crash-reports/
+screenshots/
