@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "/usr/bin/electron . --disable-gpu",
-    "build:win": "electron-builder --win portable --x64"
+    "build:win": "electron-builder --win --x64"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,17 @@
   "build": {
     "appId": "com.lacraland.launcher",
     "productName": "Lacraland Launcher",
+    "icon": "icon.ico",
     "directories": {
       "output": "dist"
     },
     "win": {
-      "target": "portable",
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
       "icon": "icon.ico"
     }
   }

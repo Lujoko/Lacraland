@@ -8,6 +8,8 @@ const { syncModpack } = require('./sync');
 
 let win;
 
+app.setName("lacraland");
+
 function createWindow() {
     Menu.setApplicationMenu(null);
 
@@ -163,17 +165,6 @@ async function ensureVanilla(gameDir) {
             }
         }
     }
-
-    const optionsPath = path.join(gameDir, 'options.txt');
-    if (!fs.existsSync(optionsPath)) {
-        await fs.writeFile(optionsPath, 'lang:es_es\n');
-    } else {
-        let opt = await fs.readFile(optionsPath, 'utf8');
-        if (!opt.includes('lang:')) {
-            opt += '\nlang:es_es\n';
-            await fs.writeFile(optionsPath, opt);
-        }
-    }
 }
 
 async function ensureNeoForge(gameDir, neoVersion = "21.1.249") {
@@ -194,10 +185,14 @@ async function ensureNeoForge(gameDir, neoVersion = "21.1.249") {
 
         sendStatus("Instalando NeoForge en el cliente...", 98);
         try {
-            const javaCmd = "java";
-            execSync(`"${javaCmd}" -jar "${installerPath}" --installClient "${gameDir}"`, { stdio: 'inherit' });
+            const javaCmd = process.platform === 'win32' ? 'javaw' : 'java';
+            execSync(`"${javaCmd}" -jar "${installerPath}" --installClient "${gameDir}"`, { 
+                stdio: 'ignore',
+                windowsHide: true 
+            });
             if (fs.existsSync(installerPath)) fs.unlinkSync(installerPath);
         } catch (e) {
+            console.error("Error en instalación de NeoForge:", e);
             throw new Error("No se pudo completar la instalación de NeoForge.");
         }
     }
@@ -339,15 +334,13 @@ async function launchMinecraftNative(gameDir, versionName, authData, ramMb) {
     const gameProcess = spawn(javaExecutable, finalSpawnArgs, {
         cwd: gameDir,
         detached: true,
-        stdio: 'pipe'
+        stdio: 'ignore',
+        windowsHide: true
     });
 
     if (win && !win.isDestroyed()) {
         win.hide();
     }
-
-    gameProcess.stdout.on('data', data => console.log(`[GAME] ${data.toString()}`));
-    gameProcess.stderr.on('data', data => console.error(`[GAME-ERR] ${data.toString()}`));
 
     gameProcess.on('close', code => {
         console.log(`[GAME] Proceso cerrado con código ${code}`);
@@ -368,7 +361,7 @@ async function handleLaunch(authData, ramAmount = "4G") {
         sendStatus("Verificando NeoForge 21.1.249...", 70);
         const customVersion = await ensureNeoForge(gameDir, "21.1.249");
 
-        sendStatus("Sincronizando mods desde GitHub...", 85);
+        sendStatus("Sincronizando mods y ajustes desde GitHub...", 85);
         await syncModpack(gameDir, (msg) => sendStatus(msg, 90));
 
         sendStatus("Iniciando juego...", 100);
