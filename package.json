@@ -1,10 +1,12 @@
 {
-  "name": "LACRALAND",
+  "name": "lacraland",
   "version": "1.0.0",
   "description": "Launcher personalizado para LacraLand",
+  "author": "Lujoko",
   "main": "main.js",
   "scripts": {
-    "start": "/usr/bin/electron . --disable-gpu"
+    "start": "/usr/bin/electron . --disable-gpu",
+    "build:win": "electron-builder --win portable --x64"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,21 @@
   "dependencies": {
     "axios": "^1.20.0",
     "fs-extra": "^11.4.0",
-    "minecraft-launcher-core": "^3.0.3",
     "msmc": "^5.0.5"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.lacraland.launcher",
+    "productName": "Lacraland Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    }
   }
 }
