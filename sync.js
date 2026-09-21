@@ -80,29 +80,22 @@ async function syncModpack(gameDir, onProgress) {
         await fs.writeFile(destPath, res.data);
     }
 
-    // 4. Sincronizar archivo de controles options.txt
+    // 4. Sincronizar archivo de controles options.txt mediante bandera de inicialización
     try {
         const localOptionsPath = path.join(gameDir, 'options.txt');
-        let needsDownload = false;
+        const flagPath = path.join(gameDir, '.controls_initialized');
 
-        if (!fs.existsSync(localOptionsPath)) {
-            needsDownload = true;
-        } else {
-            const stats = fs.statSync(localOptionsPath);
-            if (stats.size < 500) {
-                needsDownload = true;
-            }
-        }
-
-        if (needsDownload) {
-            if (onProgress) onProgress("Instalando configuración de teclas base...");
-            const optionsUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/options.txt`;
+        // Si nunca se ha aplicado la plantilla oficial de controles en esta máquina
+        if (!fs.existsSync(flagPath)) {
+            if (onProgress) onProgress("Instalando controles oficiales...");
+            const optionsUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/options.txt?t=${Date.now()}`;
             const resOpt = await axios.get(optionsUrl, { responseType: 'text' });
             
             await fs.writeFile(localOptionsPath, resOpt.data, 'utf8');
-            console.log("[SYNC] options.txt descargado e instalado correctamente.");
+            await fs.writeFile(flagPath, 'ok', 'utf8');
+            console.log("[SYNC] options.txt instalado e inicializado correctamente.");
         } else {
-            console.log("[SYNC] options.txt existente y válido. Respetando configuración.");
+            console.log("[SYNC] Controles ya inicializados previamente. Respetando configuración local.");
         }
     } catch (optErr) {
         console.warn("[SYNC] Error al gestionar options.txt:", optErr.message);
