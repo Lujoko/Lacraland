@@ -16,7 +16,7 @@ fullscreen:false
 gamma:0.5
 graphicsMode:1
 guiScale:3
-maxFps:120
+maxFps:80
 mipmapLevels:4
 narrator:0
 particles:0
@@ -126,6 +126,7 @@ key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_iris.keybind.wireframe:key.keyboard.unknown
+key_key.exposure.camera_controls:key.keyboard.unknown
 key_key.silentgear.cycle.back:key.keyboard.unknown
 key_key.silentgear.cycle.next:key.keyboard.unknown
 key_key.silentgear.displayItemProperties:key.keyboard.unknown
@@ -176,6 +177,7 @@ key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
 key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
+key_key.chatbubbles.open_bubble_oonfig:key.keyboard.f9
 key_key.epicfight.show_tooltip:key.keyboard.left.shift
 key_key.epicfight.skill_gui:key.keyboard.left.bracket
 key_key.epicfight.config:key.keyboard.unknown
@@ -232,6 +234,11 @@ key_key.securitycraft.cameraZoomOut:key.keyboard.semicolon
 key_key.securitycraft.cameraEmitRedstone:key.keyboard.unknown
 key_key.securitycraft.cameraActivateNightVision:key.keyboard.unknown
 key_key.securitycraft.setDefaultViewingDirection:key.keyboard.unknown
+key_figura.config.action_wheel_button:key.keyboard.unknown
+key_figura.config.popup_button:key.keyboard.unknown
+key_figura.config.reload_button:key.keyboard.unknown
+key_figura.config.panic_button:key.keyboard.unknown
+key_figura.config.wardrobe_button:key.keyboard.unknown
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.trashslot.toggle:key.keyboard.t
 key_key.trashslot.toggle_lock:key.keyboard.unknown
@@ -246,8 +253,8 @@ key_Scene2 start/pause:key.keyboard.unknown
 key_Scene3 start/pause:key.keyboard.unknown
 key_Scene reset:key.keyboard.unknown
 key_Quest Log:key.keyboard.l
+key_key.kubejs.kubedex:key.keyboard.k
 key_key.mca.skin_library:key.keyboard.u
-key_key.openoptions.desc:key.keyboard.f6
 key_key.journeymap.minimap_preset:key.keyboard.n
 key_key.journeymap.toggle_entity_names:key.keyboard.unknown
 key_key.journeymap.toggle_render_waypoints_map:key.keyboard.unknown
@@ -289,7 +296,9 @@ key_key.inventoryhud.openconfig:key.keyboard.apostrophe
 key_key.inventoryhud.togglepot:key.keyboard.unknown
 key_key.inventoryhud.togglearm:key.keyboard.unknown
 key_key.inventoryhud.toggleall:key.keyboard.unknown
+key_key.presencefootsteps.settings:key.keyboard.f10
 key_key.pickup.item:key.keyboard.unknown
+key_key.entityculling.toggle:key.keyboard.unknown
 soundCategory_master:0.8013245033112583
 soundCategory_music:0.04929577464788732
 soundCategory_record:0.2535211267605634
