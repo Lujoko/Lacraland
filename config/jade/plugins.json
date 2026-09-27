@@ -56,6 +56,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,
