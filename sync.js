@@ -6,23 +6,58 @@ const GITHUB_USER = 'Lujoko';
 const GITHUB_REPO = 'Lacraland';
 const BRANCH = 'main';
 
-async function getRepoModsList() {
+// --- LISTA DE IGNORADOS ---
+// El launcher NUNCA tocará ni descargará ni borrará nada que esté en estas carpetas
+const IGNORE_PATTERNS = [
+    /^config\/voicechat\//,
+    /^config\/journeymap\//,
+    /^config\/jei\//,
+    /^config\/inventoryprofilesnext\//,
+    /^config\/InventoryHUD\//,
+    /^config\/quickskin_preferences\.json/
+];
+
+function isIgnored(relativePath) {
+    const normalizedPath = relativePath.replace(/\\/g, '/');
+    return IGNORE_PATTERNS.some(regex => regex.test(normalizedPath));
+}
+
+function scanLocalDirectory(dir, baseDir) {
+    let results = [];
+    if (!fs.existsSync(dir)) return results;
+    const list = fs.readdirSync(dir);
+    for (const file of list) {
+        const filePath = path.join(dir, file);
+        const stat = fs.statSync(filePath);
+        if (stat.isDirectory()) {
+            results = results.concat(scanLocalDirectory(filePath, baseDir));
+        } else {
+            results.push(path.relative(baseDir, filePath).replace(/\\/g, '/'));
+        }
+    }
+    return results;
+}
+
+async function getRepoFilesList() {
     try {
-        const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/git/trees/${BRANCH}?recursive=1`;
+        // Le añadimos "?recursive=1&_bust=${Date.now()}" para que la URL sea única y GitHub NUNCA use caché
+        const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/git/trees/${BRANCH}?recursive=1&_bust=${Date.now()}`;
         const response = await axios.get(url, {
-            headers: { 
+            headers: {
                 'User-Agent': 'Lacraland-Launcher',
-                'Accept': 'application/vnd.github.v3+json'
+                'Accept': 'application/vnd.github.v3+json',
+                'Cache-Control': 'no-cache', // Forzamos a que no use caché guardado
+                'Pragma': 'no-cache'
             }
         });
 
         if (!response.data || !response.data.tree) return [];
 
         return response.data.tree
-            .filter(item => item.path.startsWith('mods/') && item.type === 'blob' && item.path.endsWith('.jar'))
+            .filter(item => (item.path.startsWith('mods/') || item.path.startsWith('config/')) && item.type === 'blob')
+            .filter(item => !isIgnored(item.path)) // Se salta los ignorados en la descarga
             .map(item => ({
-                name: path.basename(item.path),
-                path: item.path,
+                relativePath: item.path,
                 size: item.size,
                 download_url: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/${item.path}`
             }));
@@ -33,45 +68,51 @@ async function getRepoModsList() {
 }
 
 async function syncModpack(gameDir, onProgress) {
-    const localModsDir = path.join(gameDir, 'mods');
-    await fs.ensureDir(localModsDir);
-
-    if (onProgress) onProgress("Consultando lista de mods en GitHub...");
-    const remoteFiles = await getRepoModsList();
+    if (onProgress) onProgress("Consultando lista de archivos en GitHub...");
+    const remoteFiles = await getRepoFilesList();
 
     if (!remoteFiles) {
-        console.log("[SYNC] No se pudo obtener la lista de GitHub, manteniendo mods locales.");
+        console.log("[SYNC] No se pudo obtener la lista de GitHub, manteniendo archivos locales.");
         return;
     }
 
-    const remoteFileNames = new Set(remoteFiles.map(f => f.name));
+    const remoteFilePaths = new Set(remoteFiles.map(f => f.relativePath));
     const filesToDownload = [];
 
-    // 1. Identificar mods faltantes o actualizados
+    // 1. Identificar archivos faltantes o actualizados
     for (const item of remoteFiles) {
-        const localFilePath = path.join(localModsDir, item.name);
+        const localFilePath = path.join(gameDir, item.relativePath);
         if (!fs.existsSync(localFilePath) || fs.statSync(localFilePath).size !== item.size) {
             filesToDownload.push(item);
         }
     }
 
-    // 2. PURGA: Eliminar mods eliminados de GitHub
-    const localFiles = await fs.readdir(localModsDir);
-    for (const localFile of localFiles) {
-        if (localFile.endsWith('.jar') && !remoteFileNames.has(localFile)) {
-            console.log(`[SYNC] Eliminando mod obsoleto: ${localFile}`);
-            if (onProgress) onProgress(`Eliminando: ${localFile}`);
-            fs.removeSync(path.join(localModsDir, localFile));
+    // 2. PURGA: Eliminar archivos locales obsoletos
+    const dirsToPurge = ['mods', 'config'];
+    for (const dirName of dirsToPurge) {
+        const localDir = path.join(gameDir, dirName);
+        if (fs.existsSync(localDir)) {
+            const localFiles = scanLocalDirectory(localDir, gameDir);
+            for (const localRelativePath of localFiles) {
+                // Si el archivo no está en GitHub Y TAMPOCO está protegido por la lista de ignorados, se borra.
+                if (!remoteFilePaths.has(localRelativePath) && !isIgnored(localRelativePath)) {
+                    console.log(`[SYNC] Eliminando obsoleto: ${localRelativePath}`);
+                    if (onProgress) onProgress(`Eliminando: ${localRelativePath}`);
+                    fs.removeSync(path.join(gameDir, localRelativePath));
+                }
+            }
         }
     }
 
-    // 3. Descarga de mods requeridos
+    // 3. Descarga de archivos requeridos
     let count = 0;
     for (const file of filesToDownload) {
         count++;
-        if (onProgress) onProgress(`Descargando (${count}/${filesToDownload.length}): ${file.name}`);
-        
-        const destPath = path.join(localModsDir, file.name);
+        if (onProgress) onProgress(`Descargando (${count}/${filesToDownload.length}): ${file.relativePath}`);
+
+        const destPath = path.join(gameDir, file.relativePath);
+        await fs.ensureDir(path.dirname(destPath));
+
         const res = await axios({
             url: file.download_url,
             method: 'GET',
@@ -80,17 +121,16 @@ async function syncModpack(gameDir, onProgress) {
         await fs.writeFile(destPath, res.data);
     }
 
-    // 4. Sincronizar archivo de controles options.txt mediante bandera de inicialización
+    // 4. Sincronizar archivo de controles options.txt mediante bandera
     try {
         const localOptionsPath = path.join(gameDir, 'options.txt');
         const flagPath = path.join(gameDir, '.controls_initialized');
 
-        // Si nunca se ha aplicado la plantilla oficial de controles en esta máquina
         if (!fs.existsSync(flagPath)) {
             if (onProgress) onProgress("Instalando controles oficiales...");
             const optionsUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/options.txt?t=${Date.now()}`;
             const resOpt = await axios.get(optionsUrl, { responseType: 'text' });
-            
+
             await fs.writeFile(localOptionsPath, resOpt.data, 'utf8');
             await fs.writeFile(flagPath, 'ok', 'utf8');
             console.log("[SYNC] options.txt instalado e inicializado correctamente.");

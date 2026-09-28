@@ -1,0 +1,2631 @@
+{
+  "version": "1.0.0",
+  "neoforgeVersion": "21.1.249",
+  "files": [
+    {
+      "path": "mods/AdvancementPlaques-1.21.1-neoforge-1.6.8.jar",
+      "hash": "ad6dc60871b30f6d69f25c0ec7d79871",
+      "size": 195730
+    },
+    {
+      "path": "mods/Aquaculture-1.21.1-2.7.21.jar",
+      "hash": "53d4d0d0f62c555638c27206087c2476",
+      "size": 605949
+    },
+    {
+      "path": "mods/BN-Blood-Particles-NeoForge-1.21.1-2.0.0.jar",
+      "hash": "a262409440890ee322581ffebcaca75f",
+      "size": 2248146
+    },
+    {
+      "path": "mods/BOMD-NeoForge-1.21-1.3.3.jar",
+      "hash": "310a26dae421c83a0a02606d70047913",
+      "size": 1952017
+    },
+    {
+      "path": "mods/BasicNetherOres-neoforge-1.21.1-10.1.0.jar",
+      "hash": "c76f03a79797ebd6df970efcfa800365",
+      "size": 680087
+    },
+    {
+      "path": "mods/BetterEnd-21.0.34.jar",
+      "hash": "4c0020b997a865308839e595f1354d82",
+      "size": 97673585
+    },
+    {
+      "path": "mods/BetterNether-21.0.26.jar",
+      "hash": "110052c7b6089deaa2e553a9398a8302",
+      "size": 26656311
+    },
+    {
+      "path": "mods/BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "hash": "abb725a66aaac6c9ed4b93db25380aa8",
+      "size": 22338157
+    },
+    {
+      "path": "mods/CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "hash": "1674314a881b122dd228fee332b8f8d2",
+      "size": 250545
+    },
+    {
+      "path": "mods/Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+      "hash": "c03b02005b735e2221438a5346d8c77f",
+      "size": 309763
+    },
+    {
+      "path": "mods/CreativeCore_NEOFORGE_v2.13.44_mc1.21.1.jar",
+      "hash": "2b8a92be0c56a9b4a5b20b22a530f4cf",
+      "size": 1232783
+    },
+    {
+      "path": "mods/CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+      "hash": "fba4de114511671aa0c4a10f34268faa",
+      "size": 1185088
+    },
+    {
+      "path": "mods/CustomNPCs-Unofficial-NeoForge-1.21.1.20250917.jar",
+      "hash": "875acf98cfb71699ce341e58bb50c41b",
+      "size": 10788864
+    },
+    {
+      "path": "mods/DungeonsArise-1.21.1-2.1.68-release.jar",
+      "hash": "8c803078cb52411a40201d6e69a23529",
+      "size": 11842679
+    },
+    {
+      "path": "mods/Emojiful-Neoforge-1.21-5.2.4-all.jar",
+      "hash": "6dfeaff1e6966d4c14954b423b3c1fd2",
+      "size": 259509
+    },
+    {
+      "path": "mods/EyesInTheDarkness-1.21.1-1.4.6.jar",
+      "hash": "228ae588db15e9fd4bd099c6c9454767",
+      "size": 275653
+    },
+    {
+      "path": "mods/FarmersDelight-1.21.1-1.3.4.jar",
+      "hash": "588f140d2c343e9029dc30f10b73fdd4",
+      "size": 3160490
+    },
+    {
+      "path": "mods/FramedBlocks-10.6.1.jar",
+      "hash": "50dab232a925ad1165720e1fc8da765e",
+      "size": 4306703
+    },
+    {
+      "path": "mods/GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "hash": "3bdf763d2461aa2731ed3515e0761d2f",
+      "size": 90717
+    },
+    {
+      "path": "mods/Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "hash": "68473a4ca9a827669c13d3855c8dc0e2",
+      "size": 213853
+    },
+    {
+      "path": "mods/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "hash": "0cef57934a1a913a84af75fccedb0995",
+      "size": 1295466
+    },
+    {
+      "path": "mods/ItemPhysic_NEOFORGE_v1.8.13_mc1.21.1.jar",
+      "hash": "a7594e1ffa9b86c73c5875d5899597e5",
+      "size": 54529
+    },
+    {
+      "path": "mods/Jade-1.21.1-NeoForge-15.10.6.jar",
+      "hash": "67b89f182472859d1e478477716c9462",
+      "size": 726853
+    },
+    {
+      "path": "mods/KotlinLangForge-2.13.0-k2.4.10-3.0+neoforge.jar",
+      "hash": "da3a8a1cf4c896360593d14a67c6f917",
+      "size": 7989922
+    },
+    {
+      "path": "mods/MyNethersDelight-1.21.1-1.10.4.jar",
+      "hash": "982ca6e48de6d8e6e321d957e7438f19",
+      "size": 904388
+    },
+    {
+      "path": "mods/Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.2.jar",
+      "hash": "d74ee8913f910eda8b20c83bf61f63b6",
+      "size": 167431
+    },
+    {
+      "path": "mods/OverweightFarming-1.21.1-2.2.0-NeoForge.jar",
+      "hash": "5fa983b4bc49dd8f3e78cddf21a991c6",
+      "size": 287284
+    },
+    {
+      "path": "mods/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "hash": "703cd8ad4dc4d99e11532122812915f9",
+      "size": 97094
+    },
+    {
+      "path": "mods/Platform-neoforge-1.21.1-1.3.3.jar",
+      "hash": "e20292cd105330fffaa36c65adfc4dcd",
+      "size": 489341
+    },
+    {
+      "path": "mods/PlayerAnimationLibNeoforge-1.1.6+mc.1.21.1.jar",
+      "hash": "0a8ee42610a8a79d3803cf764d3d907f",
+      "size": 1156673
+    },
+    {
+      "path": "mods/PlayerRevive_NEOFORGE_v2.1.2_mc1.21.1.jar",
+      "hash": "b7266c7b146d978d8bbefbd9126c59c4",
+      "size": 5307768
+    },
+    {
+      "path": "mods/PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+      "hash": "718fa12a9601e76dbcd072d83ec25f29",
+      "size": 7096988
+    },
+    {
+      "path": "mods/PuzzlesLib-v21.1.56-mc1.21.1-NeoForge.jar",
+      "hash": "7c844b626ee811a94e9412a0f5593f0a",
+      "size": 1402525
+    },
+    {
+      "path": "mods/Quick Skin - NeoForge - 1.21.1-2.6.2.4.jar",
+      "hash": "10a43daad26baa70ace19465e71b8739",
+      "size": 4932632
+    },
+    {
+      "path": "mods/Ribbits-1.21.1-NeoForge-4.1.6.jar",
+      "hash": "80d8f737687ac5ec71439ebed1bef72f",
+      "size": 2215572
+    },
+    {
+      "path": "mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+      "hash": "2928f502140c1ff72adf2df7642d9ba6",
+      "size": 159205
+    },
+    {
+      "path": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "hash": "9510cef4ca24d7f6bc3144dbf6693f7d",
+      "size": 120364
+    },
+    {
+      "path": "mods/Terralith_1.21.x_v2.6.2.jar",
+      "hash": "d55b018bc4038a08d7a409800994aa63",
+      "size": 2814865
+    },
+    {
+      "path": "mods/VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar",
+      "hash": "8baebdd1f10920df0850206c13ed6b7b",
+      "size": 81945
+    },
+    {
+      "path": "mods/YungsApi-1.21.1-NeoForge-5.1.8.jar",
+      "hash": "3ebbdb2620b4b8a97166653479df9809",
+      "size": 389834
+    },
+    {
+      "path": "mods/[1.21.1] SecurityCraft v1.10.2.1.jar",
+      "hash": "862516ce5f9c976e11244270284a11e5",
+      "size": 5193371
+    },
+    {
+      "path": "mods/[Neoforge]ctov-3.6.3.jar",
+      "hash": "f90dbe850443925701122d58fd3e6911",
+      "size": 7139609
+    },
+    {
+      "path": "mods/addonslib-neoforge-1.21.1-1.14.jar",
+      "hash": "bc0f0ac951dc1eefa85cb422aeec1e37",
+      "size": 131893
+    },
+    {
+      "path": "mods/aether-1.21.1-1.5.10-neoforge.jar",
+      "hash": "87bb550408f2833299a93980c2f41bb0",
+      "size": 40223909
+    },
+    {
+      "path": "mods/alexscaves-2.0.10.jar",
+      "hash": "74665c33ea59098145597e1aee139526",
+      "size": 74900204
+    },
+    {
+      "path": "mods/alexsdelight-1.6.jar",
+      "hash": "17f05e921bee8b3cac08b8c655404734",
+      "size": 89430
+    },
+    {
+      "path": "mods/alexsmobs-1.22.17.jar",
+      "hash": "87970b4846bffc20123ecd267d888ee8",
+      "size": 26620546
+    },
+    {
+      "path": "mods/appleskin-neoforge-mc1.21-3.0.5.jar",
+      "hash": "7056a521ac0d4c3a120a2d7bfdd54833",
+      "size": 57725
+    },
+    {
+      "path": "mods/aquatictorches-1.21.1-neoforge-1.2.0.jar",
+      "hash": "6417e7b916708d679d5793d9d891ea10",
+      "size": 237954
+    },
+    {
+      "path": "mods/architectury-13.0.11-neoforge.jar",
+      "hash": "aefbea361809755c331126bcff6e6d3e",
+      "size": 584734
+    },
+    {
+      "path": "mods/artifacts-neoforge-13.2.3.jar",
+      "hash": "1b48235848e4634e60068c3a902c53df",
+      "size": 1086882
+    },
+    {
+      "path": "mods/ash_api-neoforge-21.1.1.jar",
+      "hash": "26efc511c54369008dbbf449e67dbe07",
+      "size": 30484
+    },
+    {
+      "path": "mods/athena-neoforge-1.21.1-4.0.6.jar",
+      "hash": "0c22a1ec59e5ce22eef1b614fda59b42",
+      "size": 99944
+    },
+    {
+      "path": "mods/balm-neoforge-1.21.1-21.0.65.jar",
+      "hash": "ffd35f57254160816b17db7e66f196a8",
+      "size": 783793
+    },
+    {
+      "path": "mods/bclib-21.0.26.jar",
+      "hash": "2011f724f920c0e97f4033060c97f32c",
+      "size": 2159176
+    },
+    {
+      "path": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "hash": "9f627fe031221159d74a491e279f773a",
+      "size": 328813
+    },
+    {
+      "path": "mods/butchery-5.2-neoforge-1.21.1.jar",
+      "hash": "930e7e0be5f66ad6fced14c3cc93d41a",
+      "size": 13947562
+    },
+    {
+      "path": "mods/carryon-neoforge-1.21.1-2.2.4.4-patched-no-slowness.jar",
+      "hash": "b1077f1dc75d60fa6e122f95d7680acd",
+      "size": 358503
+    },
+    {
+      "path": "mods/chatbubbles-1.0.1.jar",
+      "hash": "92a5e23f26767b3bac2a7f4ad4eaea91",
+      "size": 36813
+    },
+    {
+      "path": "mods/chatbubbles-1.1.1+1.21.1.jar",
+      "hash": "31bc0d036ea7f0054906045e5ac88b93",
+      "size": 68834
+    },
+    {
+      "path": "mods/chefsdelight-1.0.5-neoforge-1.21.1.jar",
+      "hash": "a99fb108e22e0bd50dbf543309d29a95",
+      "size": 95250
+    },
+    {
+      "path": "mods/chipped-neoforge-1.21.1-4.0.2.jar",
+      "hash": "f8fd65f72a903abd0bcbd3bf6bc09524",
+      "size": 15020578
+    },
+    {
+      "path": "mods/chisels-and-bits-neoforge-21.1.32.jar",
+      "hash": "c8bef89267d5b73ecf14126c889fe38f",
+      "size": 1698321
+    },
+    {
+      "path": "mods/citadel-1.21.1-2.7.6.jar",
+      "hash": "f489330f610335c782c61ce8815b16f1",
+      "size": 3028943
+    },
+    {
+      "path": "mods/cloth-config-15.0.140-neoforge.jar",
+      "hash": "4c3757160403fcccb8ad468c2ea22862",
+      "size": 1163890
+    },
+    {
+      "path": "mods/coffee_delight-1.4.1.jar",
+      "hash": "5275a7a3e456904bc1d6bc25624a0f64",
+      "size": 179182
+    },
+    {
+      "path": "mods/collective-1.21.1-8.39.jar",
+      "hash": "7ae605279aacf6ae233bb1aafe2775c4",
+      "size": 1061931
+    },
+    {
+      "path": "mods/connectedglass-1.1.14-neoforge-mc1.21.jar",
+      "hash": "978a7bee8daa65f9e3b480405e6da41c",
+      "size": 819976
+    },
+    {
+      "path": "mods/coroutil-neoforge-1.21.0-1.3.9.jar",
+      "hash": "741721a51d325dfccf1b74f0a792bd88",
+      "size": 65716
+    },
+    {
+      "path": "mods/cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "hash": "881eb025d54ca01165c115a38a8d48c4",
+      "size": 92722
+    },
+    {
+      "path": "mods/crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+      "hash": "ede12f7d45ce384f3f6e1443c83619e6",
+      "size": 2098079
+    },
+    {
+      "path": "mods/culturaldelights-0.17.8.jar",
+      "hash": "b084eaae001a8b9fe88e6c8e70ff76e9",
+      "size": 261247
+    },
+    {
+      "path": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+      "hash": "e8f0a3574264bb202c153b90293dc84c",
+      "size": 410690
+    },
+    {
+      "path": "mods/decocraft-3.0.11-1.21.1-neoforge.jar",
+      "hash": "dd7e3bb25bfa6d7863244db2f2a8fe9f",
+      "size": 93170262
+    },
+    {
+      "path": "mods/duckling-neoforge-1.21-5.0.1.jar",
+      "hash": "862d763cbac89187411145a02aac52bf",
+      "size": 545993
+    },
+    {
+      "path": "mods/dungeonnowloading-neoforge-1.21.1-2.11.3.jar",
+      "hash": "388dc273d555f31f4dc20dbe87501e1d",
+      "size": 85074727
+    },
+    {
+      "path": "mods/elevatorid-neoforge-1.21.1-1.11.4.jar",
+      "hash": "19bc20ef8725cd617646e6bc8d8fe13c",
+      "size": 191190
+    },
+    {
+      "path": "mods/embeddium-1.0.15+mc1.21.1.jar",
+      "hash": "55d23daccc9bf63447a4cb10e3c21db1",
+      "size": 1048745
+    },
+    {
+      "path": "mods/emf_compat_core_1.21.1_2.0.0.jar",
+      "hash": "8dfd36dc7dffd962f27637e9187a660f",
+      "size": 131505
+    },
+    {
+      "path": "mods/emf_compat_watut_1.21.1_1.0.0.jar",
+      "hash": "8f11a03b9d527d406a424a7e4e398f68",
+      "size": 172036
+    },
+    {
+      "path": "mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+      "hash": "c4840725c74865e2ba95807396c66a4f",
+      "size": 861829
+    },
+    {
+      "path": "mods/enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "hash": "0314f02f2f7ec9af0b589b66388d0d91",
+      "size": 82648
+    },
+    {
+      "path": "mods/endersdelight-1.3.1.jar",
+      "hash": "eb30eab1e43d779f9efab4c68679c924",
+      "size": 152797
+    },
+    {
+      "path": "mods/entity_model_features-3.3.9-1.21-neoforge.jar",
+      "hash": "16013cf5a76cf436bafea125aed2cc33",
+      "size": 641785
+    },
+    {
+      "path": "mods/entity_texture_features-7.2.4-1.21-neoforge.jar",
+      "hash": "c16df62a5dc282591fd613948f972147",
+      "size": 790080
+    },
+    {
+      "path": "mods/entityculling-neoforge-1.10.5-mc1.21.1.jar",
+      "hash": "efb6e5638cd09578c0aaaa396c9bfa84",
+      "size": 1585287
+    },
+    {
+      "path": "mods/epic-fight-21.17.3.1-mc1.21.1-neoforge.jar",
+      "hash": "b4d1d7e4c195fca39ce3a83690cdb147",
+      "size": 8578288
+    },
+    {
+      "path": "mods/exposure-neoforge-1.21.1-1.9.19.jar",
+      "hash": "1a71e20f6551adf0780f61037d6cefac",
+      "size": 2206392
+    },
+    {
+      "path": "mods/fastleafdecay-35.jar",
+      "hash": "97223075d6407a012024fd7e3c48e5e8",
+      "size": 9511
+    },
+    {
+      "path": "mods/ferritecore-7.0.3-neoforge.jar",
+      "hash": "e0374dac41d6c641903f9e241911e1d3",
+      "size": 121559
+    },
+    {
+      "path": "mods/figura-0.1.6+1.21.1-neoforge-mc.jar",
+      "hash": "15c9142c64321d262710dc0cec11a771",
+      "size": 2253181
+    },
+    {
+      "path": "mods/framework-neoforge-1.21.1-0.13.11.jar",
+      "hash": "06f94f31d9e0b59c8b42a5b0df7013d6",
+      "size": 387334
+    },
+    {
+      "path": "mods/fusion-1.3.14a-neoforge-mc1.21.1.jar",
+      "hash": "a47d7437cd9ce50d764d4db090ef714c",
+      "size": 945452
+    },
+    {
+      "path": "mods/fwa+1.21.1-neoforge-1.2.31.jar",
+      "hash": "042765dbf4415000d27e356e492cef2b",
+      "size": 385558
+    },
+    {
+      "path": "mods/fzzy_config-0.7.6+1.21+neoforge.jar",
+      "hash": "cd0823556e6d24046bd0f4ba74cd4981",
+      "size": 2369895
+    },
+    {
+      "path": "mods/geckolib-neoforge-1.21.1-4.9.2.jar",
+      "hash": "5cf29155ad6071b5dcba2ea24cd27350",
+      "size": 630584
+    },
+    {
+      "path": "mods/geosmelt-4.1.9.jar",
+      "hash": "c6e953a957bda94741d9518837ba91d4",
+      "size": 5282752
+    },
+    {
+      "path": "mods/goblintraders-neoforge-1.21.1-1.11.2.jar",
+      "hash": "ecbad97f19e2fe0782c7af96fbd0eec8",
+      "size": 462245
+    },
+    {
+      "path": "mods/handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "hash": "0f875f5741a6fad6f1c4f6fdbe5f538b",
+      "size": 7132842
+    },
+    {
+      "path": "mods/iceandfire-2.1.2.jar",
+      "hash": "9d5c85c7aa0375918bb54f8e53020184",
+      "size": 20773661
+    },
+    {
+      "path": "mods/immersive_armors-1.7.6+1.21.1-neoforge.jar",
+      "hash": "3f2a3c9a42a670fcc796d9f7691c78c4",
+      "size": 1274167
+    },
+    {
+      "path": "mods/inventoryhud.neoforged.1.21.1-3.4.28.jar",
+      "hash": "ec722b68291c3f06f305ca2d25fa12a1",
+      "size": 236206
+    },
+    {
+      "path": "mods/iris-neoforge-1.8.12+mc1.21.1.jar",
+      "hash": "6c1122aa7c2b1a4f24831e394c5b513f",
+      "size": 2438548
+    },
+    {
+      "path": "mods/ironchest-1.21-neoforge-16.0.7.jar",
+      "hash": "4ac578f2089261f0625e0434ecffc05f",
+      "size": 305975
+    },
+    {
+      "path": "mods/jei-1.21.1-neoforge-19.51.0.417.jar",
+      "hash": "593d20415c5ae5039b0b7eaea8ceede5",
+      "size": 1804772
+    },
+    {
+      "path": "mods/journeymap-neoforge-1.21.1-6.0.7.jar",
+      "hash": "c516fdc2d5266abfcadd5f6f1c13c899",
+      "size": 4299852
+    },
+    {
+      "path": "mods/jupiter-2.3.7-1.21.1-neoforge.jar",
+      "hash": "e9d3d142f366cfc1d33030d61f6a1fb2",
+      "size": 278988
+    },
+    {
+      "path": "mods/kotlinforforge-5.12.0-all.jar",
+      "hash": "93ec434c7112952f0501211a992538b9",
+      "size": 7279264
+    },
+    {
+      "path": "mods/krypton_fnp-neoforge-1.21.1-0.2.28.1-1.21.1.jar",
+      "hash": "1c215ed088f6d5a32d17656b089bae94",
+      "size": 1015871
+    },
+    {
+      "path": "mods/kubejs-neoforge-2101.7.2-build.368.jar",
+      "hash": "95792a5239ae2f1d478d2a674dcf557f",
+      "size": 2281720
+    },
+    {
+      "path": "mods/lambdynamiclights-4.8.11+1.21.1.jar",
+      "hash": "fc7e8b48d98bc94025ea70c1ed441b2f",
+      "size": 2023375
+    },
+    {
+      "path": "mods/letsdo-API-forge-1.3.0-beta-release-forge.jar",
+      "hash": "75487a7db8eb29e1103caa7370f7ea57",
+      "size": 1373607
+    },
+    {
+      "path": "mods/letsdo-farm_and_charm-neoforge-1.1.23.jar",
+      "hash": "d0898653149f9c43e48756e58329e4d5",
+      "size": 2586013
+    },
+    {
+      "path": "mods/letsdo-meadow-neoforge-1.4.8.jar",
+      "hash": "5dc2a62f63bc0ba03057f6f8b6e61600",
+      "size": 2165946
+    },
+    {
+      "path": "mods/letsdo-vinery-neoforge-1.5.3.jar",
+      "hash": "a669653659a18677eb240353a0a135ab",
+      "size": 2001616
+    },
+    {
+      "path": "mods/libIPN-neoforge-1.21.1-6.6.3.jar",
+      "hash": "208d2c5832cf08b4bf64bae3b6025040",
+      "size": 626146
+    },
+    {
+      "path": "mods/lithostitched-1.8.0+beta4-neoforge-21.1.jar",
+      "hash": "cfbcf4d1be760ea595639cc4c5053062",
+      "size": 954028
+    },
+    {
+      "path": "mods/lootr-neoforge-1.21.1-1.11.38.124.jar",
+      "hash": "b90dae76bd6292852baae8dca7a83918",
+      "size": 994918
+    },
+    {
+      "path": "mods/mca-neoforge-7.7.36-beta.3+1.21.1.jar",
+      "hash": "b3d798850f82a17a87ce7a71ba3c2ce2",
+      "size": 12141510
+    },
+    {
+      "path": "mods/mcpaint-1.21.1-neoforge-1.0.0.jar",
+      "hash": "2329518dff30ba90e04519d58762cb0f",
+      "size": 154698
+    },
+    {
+      "path": "mods/mcw-bridges-3.1.2-mc1.21.1neoforge.jar",
+      "hash": "d234155911dfd171acdd0b3b7f330448",
+      "size": 661387
+    },
+    {
+      "path": "mods/mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+      "hash": "af8ff4803b80715eb3eeb9bc77d704cf",
+      "size": 1190404
+    },
+    {
+      "path": "mods/mcw-furniture-3.4.1-mc1.21.1neoforge.jar",
+      "hash": "bef925460c964754872b28a13b2e2a74",
+      "size": 2080436
+    },
+    {
+      "path": "mods/mcw-lights-1.1.5-mc1.21.1neoforge.jar",
+      "hash": "0f20931a0d57acc36e2938669b25ac62",
+      "size": 525744
+    },
+    {
+      "path": "mods/mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar",
+      "hash": "d55538009395f31ca0b4b48807c2eedd",
+      "size": 777742
+    },
+    {
+      "path": "mods/mcw-mcwstairs-1.0.2-mc1.21.1neoforge.jar",
+      "hash": "48f535d3e5090694a396727d1c81f340",
+      "size": 529082
+    },
+    {
+      "path": "mods/mcw-paintings-1.1.0-mc1.21.1neoforge.jar",
+      "hash": "9d413b9ca9da2cee7a11bee6f1c9b8e2",
+      "size": 179058
+    },
+    {
+      "path": "mods/mcw-roofs-2.3.2-mc1.21.1neoforge.jar",
+      "hash": "9f72bf86f91b80effe1baefb5858926b",
+      "size": 1784829
+    },
+    {
+      "path": "mods/mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar",
+      "hash": "e7262c5ffe9d64ddd42052db09bc86ad",
+      "size": 572870
+    },
+    {
+      "path": "mods/mcwbiomesoplenty-neoforge-1.21.1-1.6.jar",
+      "hash": "65adbd782f750ad49feb4888a4d98969",
+      "size": 7018204
+    },
+    {
+      "path": "mods/monocle-0.2.3.ms.jar",
+      "hash": "a6819ad592eb346bd1343a40b5319ab3",
+      "size": 567855
+    },
+    {
+      "path": "mods/moonlight-1.21.1-3.5.2-neoforge.jar",
+      "hash": "6f84449a0cef44b70a51bee9f77e5c67",
+      "size": 2201061
+    },
+    {
+      "path": "mods/mowziesmobs-1.21.1-1.8.2.jar",
+      "hash": "5ca87731e5c0b4834a4a2e9a435a5cac",
+      "size": 36042925
+    },
+    {
+      "path": "mods/naturalist-2.0.3-neoforge-1.21.1.jar",
+      "hash": "5d66ea358691d2686f6a3a4e6eff910e",
+      "size": 11309342
+    },
+    {
+      "path": "mods/notenoughanimations-neoforge-1.12.4-mc1.21.1.jar",
+      "hash": "c03ddc5499304f81f17be246c7e395a3",
+      "size": 1939625
+    },
+    {
+      "path": "mods/notrample-1.21.1-1.0.1.jar",
+      "hash": "ba5a9f025c7a344a68ab545ce4e8c098",
+      "size": 6243
+    },
+    {
+      "path": "mods/oceansdelight-neoforge-1.0.4-1.21.1.jar",
+      "hash": "2101ff73ab8cb77d9639360833946da3",
+      "size": 117108
+    },
+    {
+      "path": "mods/owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "hash": "4c8323c3d0493f7e82a2287e5ca9df7f",
+      "size": 1221583
+    },
+    {
+      "path": "mods/pamhc2crops-NEOFORGE-1.21.1-1.0.9.jar",
+      "hash": "32ccefcb038218e921381a2d03895356",
+      "size": 1536646
+    },
+    {
+      "path": "mods/pamhc2foodcore-NEOFORGE-1.21.1-1.0.4.jar",
+      "hash": "c3c7838571bdda548d08d692e0dc4a87",
+      "size": 1699044
+    },
+    {
+      "path": "mods/pamhc2foodextended-NEOFORGE-1.21.1-1.0.0.jar",
+      "hash": "03d2aa7191dd29033fb23299c4715759",
+      "size": 1983616
+    },
+    {
+      "path": "mods/pamhc2trees-NEOFORGE-1.21.1-1.0.9.jar",
+      "hash": "b3aca94e929ce765a52b6cc33f57c643",
+      "size": 1399642
+    },
+    {
+      "path": "mods/peruviansdelight-1.21.1-1.4.0.jar",
+      "hash": "c2e964e840c8704d39e4bfd68487ff30",
+      "size": 468296
+    },
+    {
+      "path": "mods/pizzadelight-1.21.1-2.0.1.jar",
+      "hash": "695db694b10586def440a9c6708f648f",
+      "size": 273654
+    },
+    {
+      "path": "mods/plushies-neoforge-1.5.1.jar",
+      "hash": "df5189d7f0798e62586a3af6c9d345b9",
+      "size": 768718
+    },
+    {
+      "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar",
+      "hash": "533c154fb306cd8043564ee1533873ce",
+      "size": 84812
+    },
+    {
+      "path": "mods/reap-neoforge-1.21.1-1.1.2.jar",
+      "hash": "1efdf2788a490d94775977625859de12",
+      "size": 140551
+    },
+    {
+      "path": "mods/rechiseled-1.2.5-neoforge-mc1.21.jar",
+      "hash": "24da3744ed42ddf8046eb38c0534f78b",
+      "size": 11498611
+    },
+    {
+      "path": "mods/rechiseled_chipped-2.0-1.21.1.jar",
+      "hash": "a57d765a0bbb91a647ef73b3664cdc55",
+      "size": 177517
+    },
+    {
+      "path": "mods/refurbished_furniture-neoforge-1.21.1-1.0.22.jar",
+      "hash": "7379bc72b92f838949c073961dc72351",
+      "size": 7133477
+    },
+    {
+      "path": "mods/resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "hash": "84ff2805a591b10d22b7e0c69b44246c",
+      "size": 341009
+    },
+    {
+      "path": "mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+      "hash": "32da88903167d24bb20febeeb2c79225",
+      "size": 484332
+    },
+    {
+      "path": "mods/rhino-2101.2.7-build.81.jar",
+      "hash": "050aad61e018a810b0f183ad50e084c6",
+      "size": 882032
+    },
+    {
+      "path": "mods/rottencreatures-neoforge-1.21.1-1.1.2.jar",
+      "hash": "8b07792ba873d523dd49e0b06e0f78ca",
+      "size": 2608616
+    },
+    {
+      "path": "mods/rusticdelight-neoforge-1.21-1.7.1.jar",
+      "hash": "d06616ef07e34b29b7e5b465c1af2eb6",
+      "size": 1031957
+    },
+    {
+      "path": "mods/silent-gear-1.21.1-neoforge-4.2.1.1.jar",
+      "hash": "5a3a6d396490c50b639ba03898eda502",
+      "size": 3147675
+    },
+    {
+      "path": "mods/silent-lib-1.21.1-neoforge-10.6.0.jar",
+      "hash": "f004bb1aadce732b75ac63b5772c98f9",
+      "size": 268791
+    },
+    {
+      "path": "mods/silentgems-1.21.1-neoforge-5.1.3.jar",
+      "hash": "2eb767496bcd56280fed8660b7ff5f0c",
+      "size": 1457506
+    },
+    {
+      "path": "mods/simplehats-neoforge-1.21.1-0.4.0.jar",
+      "hash": "863d21d5393140dca28c68dda7bc172d",
+      "size": 1400084
+    },
+    {
+      "path": "mods/skinlayers3d-neoforge-1.11.2-mc1.21.1.jar",
+      "hash": "3dcd70a8c73100efefc23167bf6c1000",
+      "size": 1979027
+    },
+    {
+      "path": "mods/someassemblyrequired-5.2.8.jar",
+      "hash": "f64d8b98fa4047253c3ba0ea99ec9811",
+      "size": 451898
+    },
+    {
+      "path": "mods/spark-1.10.124-neoforge.jar",
+      "hash": "a61dd250e618f8fd62fc6b0943831c50",
+      "size": 3642581
+    },
+    {
+      "path": "mods/sparsestructures-neoforge-1.21.1-3.0.jar",
+      "hash": "ad2f0528870dc4f1dd462d5a56387973",
+      "size": 117743
+    },
+    {
+      "path": "mods/spawnanimations-v1.11.5-mc1.17-26.2.9-mod.jar",
+      "hash": "3e0512959c1544db6cac88095fba0909",
+      "size": 226189
+    },
+    {
+      "path": "mods/storagedelight-26.07.01a-1.21-neoforge.jar",
+      "hash": "1f86875d705f03139552f5102afaed08",
+      "size": 841065
+    },
+    {
+      "path": "mods/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+      "hash": "0428149c5db7bad43d75e6f758f47678",
+      "size": 207514
+    },
+    {
+      "path": "mods/supermartijn642corelib-1.1.24-neoforge-mc1.21.jar",
+      "hash": "b4dfa610aeb3953f2c4dd901ca0dfdfc",
+      "size": 560783
+    },
+    {
+      "path": "mods/takesapillage-neoforge-1.0.12+mc1.21.1.jar",
+      "hash": "b40e8bbe0e7e92f16726da09e1186949",
+      "size": 2795307
+    },
+    {
+      "path": "mods/the_pillager_legion_-1.7.3-neoforge-1.21.1.jar",
+      "hash": "c231471894869472c0df312f49c74f28",
+      "size": 7181602
+    },
+    {
+      "path": "mods/tombstone-neoforge-1.21.1-9.5.5.jar",
+      "hash": "4850298a4c7b5eacee60e9e4680bcef9",
+      "size": 2520446
+    },
+    {
+      "path": "mods/toms_storage-1.21-2.4.2.jar",
+      "hash": "60be115121d183a559ecdee2b35dae3b",
+      "size": 856803
+    },
+    {
+      "path": "mods/torchmaster-neoforge-1.21.1-21.1.10.jar",
+      "hash": "6a2f53ac97588286311ee1610a0c022b",
+      "size": 160740
+    },
+    {
+      "path": "mods/transparent-neoforge-21.1.0.jar",
+      "hash": "73cd324fa174bf1b52aa42e16bf6300d",
+      "size": 30001
+    },
+    {
+      "path": "mods/trashslot-neoforge-1.21.1-21.1.11.jar",
+      "hash": "3de363a7dbc6eadca2ce6fd40531392b",
+      "size": 77535
+    },
+    {
+      "path": "mods/travelersbackpack-neoforge-1.21.1-10.1.39.jar",
+      "hash": "1f97e56688d8d799b60d966f5fe3748d",
+      "size": 1425397
+    },
+    {
+      "path": "mods/uranus-2.4.1-bugfix-1.21.1-neoforge.jar",
+      "hash": "00d7d36be519971eb57016fcdefd5ae3",
+      "size": 847836
+    },
+    {
+      "path": "mods/utilitarian-1.21.1-0.19.2.jar",
+      "hash": "93bd0b9e483c06d927beae452e4e1c31",
+      "size": 623325
+    },
+    {
+      "path": "mods/veinminer-neoforge-2.11.2+1.21.1.jar",
+      "hash": "628d14eb19ac34c464d6e8e0b99cb53b",
+      "size": 616301
+    },
+    {
+      "path": "mods/voicechat-neoforge-1.21.1-2.6.22.jar",
+      "hash": "f2c1f0eb15d2fb2a8cf8a0040282df51",
+      "size": 4918442
+    },
+    {
+      "path": "mods/waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar",
+      "hash": "5b139b7dce0909359a3dac75cbe5e309",
+      "size": 256825
+    },
+    {
+      "path": "mods/watermedia-2.1.37.jar",
+      "hash": "4a09ad3ea22ad258802605b8aa929bbd",
+      "size": 37046674
+    },
+    {
+      "path": "mods/watut-neoforge-1.21.0-1.2.7.jar",
+      "hash": "31cfc24b7997dbf6ed84cd844de37d7d",
+      "size": 432269
+    },
+    {
+      "path": "mods/worldedit-mod-7.3.8.jar",
+      "hash": "f5d6f09ca5c4b1958780d01a099b779d",
+      "size": 6222854
+    },
+    {
+      "path": "mods/worldweaver-21.0.24.jar",
+      "hash": "e5ac5289251e2167756a66c78ed6f201",
+      "size": 2213373
+    },
+    {
+      "path": "mods/wunderlib-21.0.10.jar",
+      "hash": "158054c26075ef18058081be7b6fe5b8",
+      "size": 378820
+    },
+    {
+      "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+      "hash": "c346120062c3364a0d215c228354030e",
+      "size": 1118651
+    },
+    {
+      "path": "config/Butchery.toml",
+      "hash": "323e8592e9b9cfbc33d3dbfb32c380d0",
+      "size": 4494
+    },
+    {
+      "path": "config/CoroUtil/General.toml",
+      "hash": "28f0db63574e622f5065126ca4ce01c4",
+      "size": 121
+    },
+    {
+      "path": "config/CustomNpcs.cfg",
+      "hash": "fd43aac44e40f47d837969b8178c8fe3",
+      "size": 1617
+    },
+    {
+      "path": "config/InventoryHUD/curios.json",
+      "hash": "cecf973f3154754fe3ac5381970b5637",
+      "size": 851
+    },
+    {
+      "path": "config/Veinminer/blocks.json",
+      "hash": "d751713988987e9331980363e24189ce",
+      "size": 2
+    },
+    {
+      "path": "config/Veinminer/groups.json",
+      "hash": "1edf9a0383262030558877e6d799fb8b",
+      "size": 535
+    },
+    {
+      "path": "config/Veinminer/settings.json",
+      "hash": "8465fd8812a1551191ccc9315b65ac9a",
+      "size": 858
+    },
+    {
+      "path": "config/Veinminer/update/veinminer-client-neoforge-2.11.2+1.21.1.jar",
+      "hash": "222c5ee8883803e6006c52a04ad7dd00",
+      "size": 179047
+    },
+    {
+      "path": "config/Veinminer/update/veinminer-neoforge-2.11.2+1.21.1.jar",
+      "hash": "628d14eb19ac34c464d6e8e0b99cb53b",
+      "size": 616301
+    },
+    {
+      "path": "config/accessories.json5",
+      "hash": "c650b5f2c1efe0938cdf4f76eede88a0",
+      "size": 915
+    },
+    {
+      "path": "config/addonslib-common.toml",
+      "hash": "df804c9d89be827fb4b30466814b3484",
+      "size": 100
+    },
+    {
+      "path": "config/advancementplaques.toml",
+      "hash": "7deddd5725f9cc8c42b7932496816336",
+      "size": 3197
+    },
+    {
+      "path": "config/aether/aether_customizations.txt",
+      "hash": "cbb7dadd96742517600bf029d14ce08f",
+      "size": 84
+    },
+    {
+      "path": "config/aether/sun_altar_whitelist.json",
+      "hash": "d751713988987e9331980363e24189ce",
+      "size": 2
+    },
+    {
+      "path": "config/aether-client.toml",
+      "hash": "81c82a3ea01c6e65f37c880040ef751b",
+      "size": 3550
+    },
+    {
+      "path": "config/aether-common.toml",
+      "hash": "aa0a66e57c20c7ebc9a3e9459f3b31bf",
+      "size": 1379
+    },
+    {
+      "path": "config/aether-server.toml",
+      "hash": "f2b3a1811dabf4b0acd9c46a3b4b0501",
+      "size": 3730
+    },
+    {
+      "path": "config/aether-startup.toml",
+      "hash": "ceab5d1f261cae1bf39786223292c8ec",
+      "size": 101
+    },
+    {
+      "path": "config/alexscaves-client.toml",
+      "hash": "ac3a7970e91557754e1692653feccfde",
+      "size": 1894
+    },
+    {
+      "path": "config/alexscaves-general.toml",
+      "hash": "377338ac974aeb64db4189ade8e64a99",
+      "size": 6387
+    },
+    {
+      "path": "config/alexscaves_biome_generation/.version",
+      "hash": "8f14e45fceea167a5a36dedd4bea2543",
+      "size": 1
+    },
+    {
+      "path": "config/alexscaves_biome_generation/abyssal_chasm.json",
+      "hash": "f751692ee07db906c070f587174e4684",
+      "size": 273
+    },
+    {
+      "path": "config/alexscaves_biome_generation/candy_cavity.json",
+      "hash": "ea49709183a59df4d8616a1b5064ab85",
+      "size": 227
+    },
+    {
+      "path": "config/alexscaves_biome_generation/forlorn_hollows.json",
+      "hash": "d2ce1e5c4dc53be3304db20b7af14eef",
+      "size": 228
+    },
+    {
+      "path": "config/alexscaves_biome_generation/magnetic_caves.json",
+      "hash": "4737246d17edbe460c011be69a30242d",
+      "size": 228
+    },
+    {
+      "path": "config/alexscaves_biome_generation/primordial_caves.json",
+      "hash": "e8946f3b607e78d540344f983077f783",
+      "size": 227
+    },
+    {
+      "path": "config/alexscaves_biome_generation/toxic_caves.json",
+      "hash": "4ff7881c145a5ea89fef532664b891b8",
+      "size": 227
+    },
+    {
+      "path": "config/alexsmobs/alligator_snapping_turtle_spawns.json",
+      "hash": "1612fd932d46bc7e1d2f512f24b8b50e",
+      "size": 750
+    },
+    {
+      "path": "config/alexsmobs/anaconda_spawns.json",
+      "hash": "2571cf5bec58f00cd529ba5b2c6548b3",
+      "size": 1032
+    },
+    {
+      "path": "config/alexsmobs/anteater_spawns.json",
+      "hash": "2040bb544aff0345a335fd895cd0022c",
+      "size": 1166
+    },
+    {
+      "path": "config/alexsmobs/bald_eagle_spawns.json",
+      "hash": "a325e17ed04405409ac3f537124dbf40",
+      "size": 2719
+    },
+    {
+      "path": "config/alexsmobs/banana_slug_spawns.json",
+      "hash": "5e219001a913e4b3791205e90b4e88f2",
+      "size": 1689
+    },
+    {
+      "path": "config/alexsmobs/bison_spawns.json",
+      "hash": "08b1706d504d9fb5b33acf63378d77a9",
+      "size": 1753
+    },
+    {
+      "path": "config/alexsmobs/blobfish_spawns.json",
+      "hash": "ad3201c8f95a758dbe8496d677756a5e",
+      "size": 146
+    },
+    {
+      "path": "config/alexsmobs/blue_jay_spawns.json",
+      "hash": "9b797aa57e7c173d5e4a8f034f267dff",
+      "size": 4020
+    },
+    {
+      "path": "config/alexsmobs/bone_serpent_spawns.json",
+      "hash": "b6208ce4c3a2a65bedea86058fc1df1c",
+      "size": 253
+    },
+    {
+      "path": "config/alexsmobs/bunfungus_spawns.json",
+      "hash": "8d475d3e4f93fdcef5c02798564472c1",
+      "size": 478
+    },
+    {
+      "path": "config/alexsmobs/cachalot_whale_beached_spawns.json",
+      "hash": "b779f228a334a5be8eaa5f845664105c",
+      "size": 642
+    },
+    {
+      "path": "config/alexsmobs/cachalot_whale_spawns.json",
+      "hash": "3fc8f1b2c0466058fc021823426bcfb2",
+      "size": 889
+    },
+    {
+      "path": "config/alexsmobs/caiman_spawns.json",
+      "hash": "0443b3f49eb26ce302434cf0af666b90",
+      "size": 291
+    },
+    {
+      "path": "config/alexsmobs/capuchin_monkey_spawns.json",
+      "hash": "61f854072c18a0b127bb37c01b33a0ae",
+      "size": 1184
+    },
+    {
+      "path": "config/alexsmobs/catfish_spawns.json",
+      "hash": "4ed120643d7a4e222796ce91c2236009",
+      "size": 1089
+    },
+    {
+      "path": "config/alexsmobs/cave_centipede_spawns.json",
+      "hash": "922156164a885193c7624611e0fbf245",
+      "size": 2192
+    },
+    {
+      "path": "config/alexsmobs/cockroach_spawns.json",
+      "hash": "2e4cdf1517d742db07384a00f3d67a33",
+      "size": 2081
+    },
+    {
+      "path": "config/alexsmobs/comb_jelly_spawns.json",
+      "hash": "e9fa2345daa80ad12a849fe96ea656f9",
+      "size": 414
+    },
+    {
+      "path": "config/alexsmobs/cosmaw_spawns.json",
+      "hash": "99ec85d1693bdd51d1970b9bfba84267",
+      "size": 371
+    },
+    {
+      "path": "config/alexsmobs/cosmic_cod_spawns.json",
+      "hash": "84b1c3b63a2e5656da5478c844a5ad49",
+      "size": 139
+    },
+    {
+      "path": "config/alexsmobs/crimson_mosquito_spawns.json",
+      "hash": "eb1a2bb1104c3cef150049de2d3e830f",
+      "size": 781
+    },
+    {
+      "path": "config/alexsmobs/crocodile_spawns.json",
+      "hash": "2619ba7041382aa994751dc1ae8c5aae",
+      "size": 999
+    },
+    {
+      "path": "config/alexsmobs/crow_spawns.json",
+      "hash": "d0a99225d93f475713ed519f8700f08a",
+      "size": 5142
+    },
+    {
+      "path": "config/alexsmobs/devils_hole_pupfish_spawns.json",
+      "hash": "2c88b50ebef0c2d8cefd7fec53cc1b31",
+      "size": 145
+    },
+    {
+      "path": "config/alexsmobs/dropbear_spawns.json",
+      "hash": "0e94c2329c55e4b9a62c22960849e152",
+      "size": 399
+    },
+    {
+      "path": "config/alexsmobs/elephant_spawns.json",
+      "hash": "1032996d6a2cac873766f7a443d44810",
+      "size": 1163
+    },
+    {
+      "path": "config/alexsmobs/emu_spawns.json",
+      "hash": "3eb32cae8d7825df19055f0b673481ec",
+      "size": 1661
+    },
+    {
+      "path": "config/alexsmobs/endergrade_spawns.json",
+      "hash": "fe07337e303bd453f45f00ec63fa9c0a",
+      "size": 250
+    },
+    {
+      "path": "config/alexsmobs/enderiophage_spawns.json",
+      "hash": "4ab64e4848a83c605d54ade54fdf0702",
+      "size": 603
+    },
+    {
+      "path": "config/alexsmobs/farseer.json",
+      "hash": "545e8dcaae8563ace39b3c164e5f5e7e",
+      "size": 262
+    },
+    {
+      "path": "config/alexsmobs/flutter_spawns.json",
+      "hash": "1ab7408c8c7997d1ca595bdaa531820b",
+      "size": 147
+    },
+    {
+      "path": "config/alexsmobs/fly_spawns.json",
+      "hash": "2c88b50ebef0c2d8cefd7fec53cc1b31",
+      "size": 145
+    },
+    {
+      "path": "config/alexsmobs/flying_fish_spawns.json",
+      "hash": "aaf9a1130d665f7b50064f6b4be570eb",
+      "size": 708
+    },
+    {
+      "path": "config/alexsmobs/frilled_shark_spawns.json",
+      "hash": "ad3201c8f95a758dbe8496d677756a5e",
+      "size": 146
+    },
+    {
+      "path": "config/alexsmobs/froststalker_spawns.json",
+      "hash": "2a017b04fa69a371da739dca3dccfaeb",
+      "size": 934
+    },
+    {
+      "path": "config/alexsmobs/gazelle_spawns.json",
+      "hash": "397912ee2f4758bf87c6e017fc8c3dc0",
+      "size": 1050
+    },
+    {
+      "path": "config/alexsmobs/gelada_monkey_spawns.json",
+      "hash": "84b640124afb8de7bd27b9f4780f01f7",
+      "size": 993
+    },
+    {
+      "path": "config/alexsmobs/giant_squid_spawns.json",
+      "hash": "ad3201c8f95a758dbe8496d677756a5e",
+      "size": 146
+    },
+    {
+      "path": "config/alexsmobs/gorilla_spawns.json",
+      "hash": "803b7292137cbeece7aaa1d69e04b5b2",
+      "size": 1053
+    },
+    {
+      "path": "config/alexsmobs/grizzly_bear_spawns.json",
+      "hash": "9b797aa57e7c173d5e4a8f034f267dff",
+      "size": 4020
+    },
+    {
+      "path": "config/alexsmobs/guster_spawns.json",
+      "hash": "adafd5888bf7f99a1ec169426e65522d",
+      "size": 1116
+    },
+    {
+      "path": "config/alexsmobs/hammerhead_shark_spawns.json",
+      "hash": "6a2314a4130a3073965e87053fd0bc82",
+      "size": 250
+    },
+    {
+      "path": "config/alexsmobs/hummingbird_spawns.json",
+      "hash": "4ab2f69a298dba2dd6de993426aa1642",
+      "size": 3029
+    },
+    {
+      "path": "config/alexsmobs/jerboa_spawns.json",
+      "hash": "c6b90789703d28d8d91e0bacb1491a90",
+      "size": 1240
+    },
+    {
+      "path": "config/alexsmobs/kangaroo_spawns.json",
+      "hash": "3eb32cae8d7825df19055f0b673481ec",
+      "size": 1661
+    },
+    {
+      "path": "config/alexsmobs/komodo_dragon_spawns.json",
+      "hash": "2671c74d2406cd8182b0cabaac7140f0",
+      "size": 771
+    },
+    {
+      "path": "config/alexsmobs/laviathan_spawns.json",
+      "hash": "477bc268eb72dc151845a22729de3fe8",
+      "size": 142
+    },
+    {
+      "path": "config/alexsmobs/leafcutter_anthill_spawns.json",
+      "hash": "2040bb544aff0345a335fd895cd0022c",
+      "size": 1166
+    },
+    {
+      "path": "config/alexsmobs/lobster_spawns.json",
+      "hash": "3284cadc1438c85425a3621a016e6eba",
+      "size": 398
+    },
+    {
+      "path": "config/alexsmobs/maned_wolf_spawns.json",
+      "hash": "c21feac193fa689955ac90f659e1f0c2",
+      "size": 1037
+    },
+    {
+      "path": "config/alexsmobs/mantis_shrimp_spawns.json",
+      "hash": "058fad337964a50f07113e9a14655587",
+      "size": 381
+    },
+    {
+      "path": "config/alexsmobs/mimic_octopus_spawns.json",
+      "hash": "f06db03437677bd744243a39a340e2db",
+      "size": 369
+    },
+    {
+      "path": "config/alexsmobs/mimicube_spawns.json",
+      "hash": "8a0db6566c4c765f54a187647714dafd",
+      "size": 361
+    },
+    {
+      "path": "config/alexsmobs/moose_spawns.json",
+      "hash": "f37a426a4019cd5cb05ad7c226c4d37a",
+      "size": 2279
+    },
+    {
+      "path": "config/alexsmobs/mudskipper_spawns.json",
+      "hash": "0443b3f49eb26ce302434cf0af666b90",
+      "size": 291
+    },
+    {
+      "path": "config/alexsmobs/mungus_spawns.json",
+      "hash": "8d475d3e4f93fdcef5c02798564472c1",
+      "size": 478
+    },
+    {
+      "path": "config/alexsmobs/murmur.json",
+      "hash": "922156164a885193c7624611e0fbf245",
+      "size": 2192
+    },
+    {
+      "path": "config/alexsmobs/orca_spawns.json",
+      "hash": "ddaee37aa8a451c0484973b919cca420",
+      "size": 251
+    },
+    {
+      "path": "config/alexsmobs/platypus_spawns.json",
+      "hash": "a23edfc3a01c2c5622620f442c6a8193",
+      "size": 621
+    },
+    {
+      "path": "config/alexsmobs/potoo_spawns.json",
+      "hash": "d1511fa5b0562676dab091599bc838a2",
+      "size": 148
+    },
+    {
+      "path": "config/alexsmobs/raccoon_spawns.json",
+      "hash": "acebed0c7954d70f5835f34c3b891376",
+      "size": 3708
+    },
+    {
+      "path": "config/alexsmobs/rain_frog_spawns.json",
+      "hash": "c6b90789703d28d8d91e0bacb1491a90",
+      "size": 1240
+    },
+    {
+      "path": "config/alexsmobs/rattlesnake_spawns.json",
+      "hash": "8e23413736a996951fb625397ff3f3a7",
+      "size": 1634
+    },
+    {
+      "path": "config/alexsmobs/rhinoceros_spawns.json",
+      "hash": "397912ee2f4758bf87c6e017fc8c3dc0",
+      "size": 1050
+    },
+    {
+      "path": "config/alexsmobs/roadrunner_spawns.json",
+      "hash": "8e23413736a996951fb625397ff3f3a7",
+      "size": 1634
+    },
+    {
+      "path": "config/alexsmobs/rocky_roller_spawns.json",
+      "hash": "0ee17cc0e67f4e0ec70f963c658b71bf",
+      "size": 669
+    },
+    {
+      "path": "config/alexsmobs/seagull_spawns.json",
+      "hash": "477c8512be58a4c7cadbc3ea65c3642a",
+      "size": 1296
+    },
+    {
+      "path": "config/alexsmobs/seal_spawns.json",
+      "hash": "da2e5f89d6a148ca2008c351c026b1ec",
+      "size": 873
+    },
+    {
+      "path": "config/alexsmobs/shoebill_spawns.json",
+      "hash": "ea40512f5507f6e83260ef5696c40555",
+      "size": 619
+    },
+    {
+      "path": "config/alexsmobs/skelewag_spawns.json",
+      "hash": "b81d0f4e46326e1c88c23c34b0f86602",
+      "size": 370
+    },
+    {
+      "path": "config/alexsmobs/skreecher.json",
+      "hash": "ce39ad5dd123dfcd62b854469283815d",
+      "size": 272
+    },
+    {
+      "path": "config/alexsmobs/skunk_spawns.json",
+      "hash": "8e885caf4fa2f10dc5fa9c6216faa668",
+      "size": 2033
+    },
+    {
+      "path": "config/alexsmobs/snow_leopard_spawns.json",
+      "hash": "c6579e5e8ded01cfcc6b337b92d48506",
+      "size": 1804
+    },
+    {
+      "path": "config/alexsmobs/soul_vulture_spawns.json",
+      "hash": "0f34e243633de91a26dede615f852487",
+      "size": 519
+    },
+    {
+      "path": "config/alexsmobs/spectre_spawns.json",
+      "hash": "fe07337e303bd453f45f00ec63fa9c0a",
+      "size": 250
+    },
+    {
+      "path": "config/alexsmobs/straddler_spawns.json",
+      "hash": "75d0a15283306b1b4a0a4ccf0d280e9a",
+      "size": 660
+    },
+    {
+      "path": "config/alexsmobs/stradpole_spawns.json",
+      "hash": "75d0a15283306b1b4a0a4ccf0d280e9a",
+      "size": 660
+    },
+    {
+      "path": "config/alexsmobs/sugar_glider_spawns.json",
+      "hash": "6f1722c17a8adc08ab757a0e6377233e",
+      "size": 418
+    },
+    {
+      "path": "config/alexsmobs/sunbird_spawns.json",
+      "hash": "147fdf357f3478c40b5b7481569c6c07",
+      "size": 3925
+    },
+    {
+      "path": "config/alexsmobs/tarantula_hawk_spawns.json",
+      "hash": "c6b90789703d28d8d91e0bacb1491a90",
+      "size": 1240
+    },
+    {
+      "path": "config/alexsmobs/tasmanian_devil_spawns.json",
+      "hash": "ca6ca10e9f534d483df43e097ab0a8b2",
+      "size": 1904
+    },
+    {
+      "path": "config/alexsmobs/terrapin_spawns.json",
+      "hash": "a23edfc3a01c2c5622620f442c6a8193",
+      "size": 621
+    },
+    {
+      "path": "config/alexsmobs/tiger_spawns.json",
+      "hash": "8e7708606954a64a9f8648585c8a4a74",
+      "size": 1209
+    },
+    {
+      "path": "config/alexsmobs/toucan_spawns.json",
+      "hash": "2040bb544aff0345a335fd895cd0022c",
+      "size": 1166
+    },
+    {
+      "path": "config/alexsmobs/triops_spawns.json",
+      "hash": "c6b90789703d28d8d91e0bacb1491a90",
+      "size": 1240
+    },
+    {
+      "path": "config/alexsmobs/tusklin_spawns.json",
+      "hash": "7cb897b147863d2b3bb6940b11bc1b30",
+      "size": 874
+    },
+    {
+      "path": "config/alexsmobs/underminer.json",
+      "hash": "2e4cdf1517d742db07384a00f3d67a33",
+      "size": 2081
+    },
+    {
+      "path": "config/alexsmobs/void_worm_spawns.json",
+      "hash": "0531dec7156e47b4566a5eb598a4b931",
+      "size": 18
+    },
+    {
+      "path": "config/alexsmobs/warped_mosco_spawns.json",
+      "hash": "0531dec7156e47b4566a5eb598a4b931",
+      "size": 18
+    },
+    {
+      "path": "config/alexsmobs/warped_toad_spawns.json",
+      "hash": "39d42abce47f0e9e64bab7680a0d8ef0",
+      "size": 661
+    },
+    {
+      "path": "config/alexsmobs-common.toml",
+      "hash": "c1b8484034fa2e6128084c0d0e8ae748",
+      "size": 38680
+    },
+    {
+      "path": "config/appleskin-client.toml",
+      "hash": "fc930aaa2289fcbacf33f2b9da330636",
+      "size": 1353
+    },
+    {
+      "path": "config/aquaculture-common.toml",
+      "hash": "185325ebd981e01d016096134cb16044",
+      "size": 755
+    },
+    {
+      "path": "config/artifacts/client.toml",
+      "hash": "4fcf2fcff8d3fc9faee398c034dda7ed",
+      "size": 989
+    },
+    {
+      "path": "config/artifacts/general.toml",
+      "hash": "bba7422d9fb84441a5af69c5e91d4658",
+      "size": 2268
+    },
+    {
+      "path": "config/artifacts/items.toml",
+      "hash": "dc823a60d01b643f3e33ed57ffcc3653",
+      "size": 19791
+    },
+    {
+      "path": "config/bclib/client.json",
+      "hash": "c1e8d0f5d3fcbc574f06768b59d268d6",
+      "size": 217
+    },
+    {
+      "path": "config/bclib/main.json",
+      "hash": "f8022e64d741f1ea80e7a7569f0b8a4f",
+      "size": 110
+    },
+    {
+      "path": "config/better-advanced-tooltips-client.toml",
+      "hash": "e1ef8fb4c622d73ad78d4c97e093b74f",
+      "size": 137
+    },
+    {
+      "path": "config/betterend/biomes_toggle.json",
+      "hash": "1fc0469f2260d63cea8e6f6d4310c20f",
+      "size": 797
+    },
+    {
+      "path": "config/betterend/client.json",
+      "hash": "9ec8a1d399dfebd42a45ea0c1c0df007",
+      "size": 172
+    },
+    {
+      "path": "config/betterend/generator.json",
+      "hash": "26242266e8f92d3adb2ecf029155af3f",
+      "size": 1295
+    },
+    {
+      "path": "config/betterend/portals.json",
+      "hash": "8f2b134ea2d1bb6ada31816c0e11e5a4",
+      "size": 190
+    },
+    {
+      "path": "config/betterend/structures_toggle.json",
+      "hash": "b268f730a3b60d15774103aefa6175fe",
+      "size": 461
+    },
+    {
+      "path": "config/betternether/biomes_toggle.json",
+      "hash": "f63a3562d933417d22c9fb1d223e11b3",
+      "size": 757
+    },
+    {
+      "path": "config/betternether/client.json",
+      "hash": "07522347197b184a433b6d1a6e0ad4f4",
+      "size": 228
+    },
+    {
+      "path": "config/betternether/default_game_rules.json",
+      "hash": "d92883dd44d9ea1c8e0f4ec24fd0e710",
+      "size": 218
+    },
+    {
+      "path": "config/betternether/structures_toggle.json",
+      "hash": "683f33131a0624a44da45fbcc218d2b2",
+      "size": 327
+    },
+    {
+      "path": "config/betternether/world.json",
+      "hash": "e6b19108c25746385d42edd69185a506",
+      "size": 117
+    },
+    {
+      "path": "config/biomesoplenty/biome_toggles.json",
+      "hash": "0e4557a6478935daab47223d35c2de32",
+      "size": 2192
+    },
+    {
+      "path": "config/biomesoplenty/gameplay.toml",
+      "hash": "6699bc35605029e8f852b9f3a18e7c62",
+      "size": 106
+    },
+    {
+      "path": "config/biomesoplenty/generation.toml",
+      "hash": "f8c8fc955c5e9084551a51a76d540280",
+      "size": 508
+    },
+    {
+      "path": "config/bnbloodparticles-common.toml",
+      "hash": "aae08017476ead7845584e9ba5ad7b70",
+      "size": 3776
+    },
+    {
+      "path": "config/bno-common.toml",
+      "hash": "c52dbfce156ac406cf3a5e19eb543a1b",
+      "size": 1621
+    },
+    {
+      "path": "config/bosses_of_mass_destruction.json5",
+      "hash": "f4aab9d5958f9b38a49e925098a8c8a6",
+      "size": 1475
+    },
+    {
+      "path": "config/carryon-client.toml",
+      "hash": "3c09b63172b94f9286d0f87412043ad8",
+      "size": 582
+    },
+    {
+      "path": "config/carryon-common.toml",
+      "hash": "541c628c2e72e65b040660a9aa39bcce",
+      "size": 8427
+    },
+    {
+      "path": "config/chatbubbles-server.toml",
+      "hash": "9b2c53385ffc309fff3858972ce7fe3f",
+      "size": 941
+    },
+    {
+      "path": "config/chefsdelight-common.toml",
+      "hash": "430381acfa9aec9e14f3ffa8b0153e45",
+      "size": 688
+    },
+    {
+      "path": "config/chiselsandbits-client.toml",
+      "hash": "3e803696b78ac70588fbcd057f693d0a",
+      "size": 4360
+    },
+    {
+      "path": "config/chiselsandbits-common.toml",
+      "hash": "7645d16114456aae32828b3679f09dfa",
+      "size": 527
+    },
+    {
+      "path": "config/chiselsandbits-server.toml",
+      "hash": "6198eee8852fed2ea3d1de031e922029",
+      "size": 1444
+    },
+    {
+      "path": "config/citadel-common.toml",
+      "hash": "e203c2542b640309a5035b92baae1dfd",
+      "size": 651
+    },
+    {
+      "path": "config/collective.json5",
+      "hash": "7283fbc343c15ada551964030d57ea71",
+      "size": 2471
+    },
+    {
+      "path": "config/copperagebackport.json",
+      "hash": "0cbd20dc1daa1fdfa97bc30bf78064ee",
+      "size": 191
+    },
+    {
+      "path": "config/cosmeticarmorreworked-client.toml",
+      "hash": "b3d94401e2bff097bf2f412a0e822a35",
+      "size": 1296
+    },
+    {
+      "path": "config/cosmeticarmorreworked-common.toml",
+      "hash": "99b3f85d8577083d35286a90e1898b8a",
+      "size": 367
+    },
+    {
+      "path": "config/creativecore-client.json",
+      "hash": "235bb114cb2741da4a4dd79c3f559c15",
+      "size": 23
+    },
+    {
+      "path": "config/creativecore.json",
+      "hash": "a3979095f52fee66bc8624b7898d2e8e",
+      "size": 274
+    },
+    {
+      "path": "config/creeperoverhaul.jsonc",
+      "hash": "61d051fff7b4e873a6b1065f596e744c",
+      "size": 1913
+    },
+    {
+      "path": "config/crepperoverhaul-client.jsonc",
+      "hash": "9395984d47634716dd0888f2ae5662a4",
+      "size": 389
+    },
+    {
+      "path": "config/crittersandcompanions-common.json5",
+      "hash": "4605fc5be3a0a932e1bac9cfae872d08",
+      "size": 3836
+    },
+    {
+      "path": "config/ctov-common.toml",
+      "hash": "a2a745004aa6444ecf449714d9469519",
+      "size": 1230
+    },
+    {
+      "path": "config/culturaldelights-common.toml",
+      "hash": "de65b0b55ed2389435676c210b6b5938",
+      "size": 320
+    },
+    {
+      "path": "config/cumulus_menus-client.toml",
+      "hash": "fc364cfa2a927cebdb5f4a3dac00b724",
+      "size": 734
+    },
+    {
+      "path": "config/curios-client.toml",
+      "hash": "5dbbe25536b70d959f33c3a81e43d52e",
+      "size": 741
+    },
+    {
+      "path": "config/curios-common.toml",
+      "hash": "a096d60146e3eef85b75b6afcea64eb2",
+      "size": 155
+    },
+    {
+      "path": "config/curios-server.toml",
+      "hash": "f6737f48c2362c5454f9cb3f58274e6d",
+      "size": 467
+    },
+    {
+      "path": "config/decocraft-common.toml",
+      "hash": "de65b0b55ed2389435676c210b6b5938",
+      "size": 320
+    },
+    {
+      "path": "config/dnl/patrons.json",
+      "hash": "cc5eb3ebdb5c98a5ed863d0de09af055",
+      "size": 8538
+    },
+    {
+      "path": "config/dungeonnowloading-server.toml",
+      "hash": "0c37ba08174a8af35930f34429d8034b",
+      "size": 2401
+    },
+    {
+      "path": "config/elevatorid-server.toml",
+      "hash": "fdd52a8b61e72e00ae56d34c53479963",
+      "size": 718
+    },
+    {
+      "path": "config/embeddium-fingerprint.json",
+      "hash": "d85590aa14836a79016a05a06bddcae7",
+      "size": 427
+    },
+    {
+      "path": "config/embeddium-mixins.properties",
+      "hash": "27966c422d246713e5f16002807bbd9a",
+      "size": 268
+    },
+    {
+      "path": "config/embeddium-options.json",
+      "hash": "492d1f6907c75d27ca334781b44e6ffd",
+      "size": 849
+    },
+    {
+      "path": "config/emf_compat.json",
+      "hash": "aca22dc7b9479b94862395c43262ae88",
+      "size": 42
+    },
+    {
+      "path": "config/emojiful-client.toml",
+      "hash": "530f240ae23ab6e11a0671a8984db756",
+      "size": 804
+    },
+    {
+      "path": "config/emotecraft.json",
+      "hash": "d592804655b892e45c4a074da25fcd5a",
+      "size": 668
+    },
+    {
+      "path": "config/emotecraft_emote_map.json",
+      "hash": "fdcffe9e7eaa4949ee1d33d613a7c2eb",
+      "size": 117
+    },
+    {
+      "path": "config/enchdesc.json",
+      "hash": "ade13569468e81ff622a879efc92e8e6",
+      "size": 2059
+    },
+    {
+      "path": "config/endersdelight-common.toml",
+      "hash": "6127700c9e5b53d82975eeaaa59f843a",
+      "size": 1280
+    },
+    {
+      "path": "config/entity_model_features.json",
+      "hash": "409f2bd4508138ce319fe33cc07d903e",
+      "size": 1258
+    },
+    {
+      "path": "config/entity_texture_features.json",
+      "hash": "4e6ad77b59844f52be1d49be34ff884f",
+      "size": 1452
+    },
+    {
+      "path": "config/entityculling.json",
+      "hash": "da0e5b077b77efa3249c47e9b2e5a4ae",
+      "size": 2228
+    },
+    {
+      "path": "config/epicfight/native/ServerCommunicationHelper.so",
+      "hash": "80b7c8f524c25608ff1bc3db8a9dae96",
+      "size": 323744
+    },
+    {
+      "path": "config/epicfight-client.toml",
+      "hash": "d6f10db65c3af161f41bc1e802d35f1f",
+      "size": 2739
+    },
+    {
+      "path": "config/epicfight-common.toml",
+      "hash": "08d95fb3aaff6aaeefc71f98dcdb0f3f",
+      "size": 639
+    },
+    {
+      "path": "config/essential-mod-partner/config.json",
+      "hash": "845936bf3faee04970d11535a80bf3aa",
+      "size": 28
+    },
+    {
+      "path": "config/essential-mod-partner/data.cache.json",
+      "hash": "d83836222df0ab4198994b92e02afd07",
+      "size": 18403
+    },
+    {
+      "path": "config/etf_warnings.json",
+      "hash": "b49b5603d2df29fa132f89ec91974572",
+      "size": 28
+    },
+    {
+      "path": "config/exposure-client.toml",
+      "hash": "e78f633b57b1d45a3cd22550f29fe604",
+      "size": 7568
+    },
+    {
+      "path": "config/exposure-common.toml",
+      "hash": "65ec5ea043cd21cf080c3a81137bc99f",
+      "size": 344
+    },
+    {
+      "path": "config/exposure-server.toml",
+      "hash": "6540edbafe681c1a201039c8789c342b",
+      "size": 5255
+    },
+    {
+      "path": "config/eyesinthedarkness-client.toml",
+      "hash": "93e6b1f584571be8c3d23ac8084596bd",
+      "size": 189
+    },
+    {
+      "path": "config/eyesinthedarkness-server.toml",
+      "hash": "434b9f7fff19500843de0b5ae3998a5a",
+      "size": 5246
+    },
+    {
+      "path": "config/farm_and_charm-common.toml",
+      "hash": "657fc5724b3730c6c044163310690c9f",
+      "size": 5386
+    },
+    {
+      "path": "config/farmersdelight-client.toml",
+      "hash": "a4435680c63f6e2a001227d1a539df5a",
+      "size": 470
+    },
+    {
+      "path": "config/farmersdelight-common.toml",
+      "hash": "c8db26bd9380186ec3096a6b0a7ffcb5",
+      "size": 3757
+    },
+    {
+      "path": "config/fastleafdecay-server.toml",
+      "hash": "7dd6948c6160de4bc526c5ee776f0374",
+      "size": 249
+    },
+    {
+      "path": "config/ferritecore-mixin.toml",
+      "hash": "40d7a8c5a40dd540c34b4a8ee96049b5",
+      "size": 1579
+    },
+    {
+      "path": "config/figura.json",
+      "hash": "dd61e3d09fb99762c9376df7208f0254",
+      "size": 25
+    },
+    {
+      "path": "config/fml.toml",
+      "hash": "cfccbe591b26e43307a94c2e64c7b4e8",
+      "size": 1518
+    },
+    {
+      "path": "config/framedblocks-client.toml",
+      "hash": "2f48c9dccfc25053c0ab201196de11b2",
+      "size": 6990
+    },
+    {
+      "path": "config/framedblocks-server.toml",
+      "hash": "90f63655d875bffedbf66ffade5b441e",
+      "size": 1232
+    },
+    {
+      "path": "config/fzzy_config/keybinds.toml",
+      "hash": "db29914636f6e1455464345f8e91d353",
+      "size": 6403
+    },
+    {
+      "path": "config/goblintraders-entities.toml",
+      "hash": "279a412487fce2873b69abe6b781bc34",
+      "size": 6848
+    },
+    {
+      "path": "config/iceandfire/iaf-client.json",
+      "hash": "3cc4214c82dd180c7a73e657f417a0e7",
+      "size": 108
+    },
+    {
+      "path": "config/iceandfire/iaf-common.json",
+      "hash": "4fa007c4a839ec3342cf002e53296fb4",
+      "size": 4703
+    },
+    {
+      "path": "config/immersive_armors.json",
+      "hash": "810482082450419dc6da6f4790db6d82",
+      "size": 435
+    },
+    {
+      "path": "config/inventoryhud-client.toml",
+      "hash": "3c16e04043f4482c6f22587536cd48f3",
+      "size": 5741
+    },
+    {
+      "path": "config/inventoryprofilesnext/Lujoko.exaroton.me/villager-trading-config-v2.json",
+      "hash": "de09544857b72ba08fecdf74c26cbdb9",
+      "size": 1177
+    },
+    {
+      "path": "config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json",
+      "hash": "1a018549a3d0f945870f75056ce7e5eb",
+      "size": 1450
+    },
+    {
+      "path": "config/inventoryprofilesnext/inventoryprofiles.json",
+      "hash": "ded1b91df09ec5b73e628db72a184fa5",
+      "size": 57
+    },
+    {
+      "path": "config/inventoryprofilesnext/sadasd/prev-villager-trading-config-v2.json",
+      "hash": "de09544857b72ba08fecdf74c26cbdb9",
+      "size": 1177
+    },
+    {
+      "path": "config/inventoryprofilesnext/sadasd/villager-trading-config-v2.json",
+      "hash": "de09544857b72ba08fecdf74c26cbdb9",
+      "size": 1177
+    },
+    {
+      "path": "config/inventoryprofilesnext/villager-trading-config-v2.json",
+      "hash": "de09544857b72ba08fecdf74c26cbdb9",
+      "size": 1177
+    },
+    {
+      "path": "config/iris-excluded.json",
+      "hash": "670592b1394f12ab96d8432f14ac8dd9",
+      "size": 31
+    },
+    {
+      "path": "config/iris.properties",
+      "hash": "8c9b772d93e8a1a2ba1d8793a392f9ed",
+      "size": 272
+    },
+    {
+      "path": "config/itemphysic-client.json",
+      "hash": "6e3a0d8e01e687b22dcc4d6123c1ce79",
+      "size": 654
+    },
+    {
+      "path": "config/itemphysic.json",
+      "hash": "aa42aa19fea11a5e5c772b112a35f27c",
+      "size": 8908
+    },
+    {
+      "path": "config/jade/hide-blocks.json",
+      "hash": "83c9f405ab4ae1427f76ab4a30a16644",
+      "size": 149
+    },
+    {
+      "path": "config/jade/hide-entities.json",
+      "hash": "a52182a33844468228bdbc58dbe5a73a",
+      "size": 243
+    },
+    {
+      "path": "config/jade/jade.json",
+      "hash": "ad37277172d44ee4f0b17d486850c163",
+      "size": 1089
+    },
+    {
+      "path": "config/jade/plugins.json",
+      "hash": "154098ead16eb498183424a18db8c8a3",
+      "size": 2735
+    },
+    {
+      "path": "config/jade/sort-order.json",
+      "hash": "fc87c3f2b92ad105544ff1ae37d1df6b",
+      "size": 2676
+    },
+    {
+      "path": "config/jei/blacklist.json",
+      "hash": "78f1a39821342258f73e542d9ea40e0f",
+      "size": 19
+    },
+    {
+      "path": "config/jei/ingredient-list-mod-sort-order.ini",
+      "hash": "f2ab8e88b481e305c72c6f074e47b94b",
+      "size": 1434
+    },
+    {
+      "path": "config/jei/ingredient-list-type-sort-order.ini",
+      "hash": "7cdaaf60f4b2ba177bffddf4a5875830",
+      "size": 76
+    },
+    {
+      "path": "config/jei/jei-client.ini",
+      "hash": "500670381fdd0751b8c04dd771210ce9",
+      "size": 12641
+    },
+    {
+      "path": "config/jei/jei-colors.ini",
+      "hash": "e08c9d120a141e970b922f5d94c9c43f",
+      "size": 1353
+    },
+    {
+      "path": "config/jei/jei-debug.ini",
+      "hash": "02b98554c120d47f225d833126c86bc8",
+      "size": 907
+    },
+    {
+      "path": "config/jei/jei-mod-id-format.ini",
+      "hash": "a5dce5dd98ab692be64b12aa3aa51fe6",
+      "size": 545
+    },
+    {
+      "path": "config/jei/recipe-category-sort-order.ini",
+      "hash": "d665518e4902c48fbe22a5c5962c7a41",
+      "size": 2156
+    },
+    {
+      "path": "config/jei/world/server/LacraLand (lujoko_exaroton_me)/lookupHistory.json",
+      "hash": "ff613078a0d3cd5b5aa7bae767f83d17",
+      "size": 126
+    },
+    {
+      "path": "config/jei-server.toml",
+      "hash": "e9a91e2e9dff21148d90bdcf940aa3ec",
+      "size": 317
+    },
+    {
+      "path": "config/journeymap-server.toml",
+      "hash": "50c7ed69cd838000878da31e4bfb6293",
+      "size": 541
+    },
+    {
+      "path": "config/jupiter.json",
+      "hash": "8f4bca3be8047b6a946288be8036fbae",
+      "size": 171
+    },
+    {
+      "path": "config/krypton_fnp.yaml",
+      "hash": "d5fd9cdbf06e504e62e2dc7eaf5c4bc3",
+      "size": 947
+    },
+    {
+      "path": "config/lambdynlights.toml",
+      "hash": "ea1917df0f1c3fd26e782f0d9f5a63cc",
+      "size": 1448
+    },
+    {
+      "path": "config/lithostitched.json",
+      "hash": "3ca8222416b50ea7d94763ee5b4a9fb5",
+      "size": 242
+    },
+    {
+      "path": "config/lootr-client.toml",
+      "hash": "24c1f940e5f2f587915abe1fb6d82c25",
+      "size": 471
+    },
+    {
+      "path": "config/lootr-common.toml",
+      "hash": "fac76195cbcfeb1ff99b2a90861d6f4e",
+      "size": 8284
+    },
+    {
+      "path": "config/mca.json",
+      "hash": "6497ca9eadee9851059825080d4a130f",
+      "size": 9705
+    },
+    {
+      "path": "config/mcpaint-client.toml",
+      "hash": "a18408eb205dac4fcebaa6606c6983bd",
+      "size": 1515
+    },
+    {
+      "path": "config/meadow-common.toml",
+      "hash": "c452cc3986077fb7143f097683122e13",
+      "size": 58
+    },
+    {
+      "path": "config/monocle.properties",
+      "hash": "ad9b26d413b97523f3a41d8e7efbbad3",
+      "size": 1069
+    },
+    {
+      "path": "config/moonlight-client.toml",
+      "hash": "f4bd0cad9b5335bfa8c49b486d8dd33a",
+      "size": 2108
+    },
+    {
+      "path": "config/moonlight-common.toml",
+      "hash": "a5d79c1d2ec53a1784d1cdf52f0e1bcd",
+      "size": 949
+    },
+    {
+      "path": "config/mowziesmobs-client.toml",
+      "hash": "1bafc9955b9540dda6d57db119f5680d",
+      "size": 963
+    },
+    {
+      "path": "config/mowziesmobs-common.toml",
+      "hash": "d67ea9d92ff16bda31b1c0a8cf97051c",
+      "size": 36941
+    },
+    {
+      "path": "config/mynethersdelight-common.toml",
+      "hash": "e2257f71fd534dd171ca58ca7905f2d1",
+      "size": 1867
+    },
+    {
+      "path": "config/naturalist-client.toml",
+      "hash": "6f5d9945b8b37f9d736ee001b2dd328c",
+      "size": 25
+    },
+    {
+      "path": "config/naturalist-server.toml",
+      "hash": "76d04b76311d4f7e74e13f8fd514dc7b",
+      "size": 1464
+    },
+    {
+      "path": "config/neoforge-client.toml",
+      "hash": "1bd849f7104eae072adbf27dd64fd49b",
+      "size": 570
+    },
+    {
+      "path": "config/neoforge-common.toml",
+      "hash": "17ca5aeaf2a1cbe7b12715ad78ea4601",
+      "size": 764
+    },
+    {
+      "path": "config/neoforge-server.toml",
+      "hash": "5c4cab74a280cbd5c67493b8101cc8fa",
+      "size": 1167
+    },
+    {
+      "path": "config/notenoughanimations.json",
+      "hash": "3f3d7ed03466549ea2daa6c566c2fb93",
+      "size": 3357
+    },
+    {
+      "path": "config/pamhc2crops.toml",
+      "hash": "e0b57353d4dd5b2f872c799a4ddf5da9",
+      "size": 311
+    },
+    {
+      "path": "config/pamhc2trees.toml",
+      "hash": "763605b2b32721dfb79a01aafb543568",
+      "size": 158
+    },
+    {
+      "path": "config/peruviansdelight-common.toml",
+      "hash": "de65b0b55ed2389435676c210b6b5938",
+      "size": 320
+    },
+    {
+      "path": "config/pickupnotifier/pickupnotifier-client.toml",
+      "hash": "ad565bfdf1dac606984bd1e14eee2351",
+      "size": 3535
+    },
+    {
+      "path": "config/pickupnotifier/pickupnotifier-server.toml",
+      "hash": "bd05115ec3944068813299ffa3a06e71",
+      "size": 499
+    },
+    {
+      "path": "config/pizzadelight-server.toml",
+      "hash": "77c4cd29f6a90078df30f9093611ec22",
+      "size": 139
+    },
+    {
+      "path": "config/playerrevive-client.json",
+      "hash": "a3124ef28058a8afae83c56f160d237b",
+      "size": 131
+    },
+    {
+      "path": "config/playerrevive.json",
+      "hash": "d609bd6812badb4bca06543784c606d1",
+      "size": 2273
+    },
+    {
+      "path": "config/presencefootsteps/userconfig.json",
+      "hash": "77f84197c888af96d9ff598468c0f142",
+      "size": 402
+    },
+    {
+      "path": "config/quickskin-client.json",
+      "hash": "fcf5164ab099338cd06b5d627f019323",
+      "size": 1302
+    },
+    {
+      "path": "config/quickskin-server.json",
+      "hash": "c387f740790c90761d03846127f84f88",
+      "size": 72
+    },
+    {
+      "path": "config/quickskin_preferences.json",
+      "hash": "1589d33726477a6a0fb69bfb716a8877",
+      "size": 361
+    },
+    {
+      "path": "config/reap-server.toml",
+      "hash": "efdda93981058cd8d69e8fe730295e68",
+      "size": 1781
+    },
+    {
+      "path": "config/refurbished_furniture.client.toml",
+      "hash": "96c137b4bf8fe215abafb13e806b4324",
+      "size": 1152
+    },
+    {
+      "path": "config/refurbished_furniture.server.toml",
+      "hash": "1b17351798511bc7457d0e76c815f347",
+      "size": 8038
+    },
+    {
+      "path": "config/resourceful-config-web.json",
+      "hash": "ddb781a5feec913a073b93c4e44a978d",
+      "size": 196
+    },
+    {
+      "path": "config/ribbits-neoforge-1_21_1.toml",
+      "hash": "b04640773670155b2c94889bf821e6ce",
+      "size": 395
+    },
+    {
+      "path": "config/ribbits-options.json",
+      "hash": "ae7a8e3293c7c466d1210c5de3459a52",
+      "size": 33
+    },
+    {
+      "path": "config/rusticdelight-common.toml",
+      "hash": "24abe5147c05d2c71ef90c2c5e4c5577",
+      "size": 2682
+    },
+    {
+      "path": "config/securitycraft-client.toml",
+      "hash": "ca4073df242508e8a511182bbedbf8ee",
+      "size": 1994
+    },
+    {
+      "path": "config/securitycraft-server.toml",
+      "hash": "15405f8e1849ff630d5762220e318303",
+      "size": 8204
+    },
+    {
+      "path": "config/sereneseasons/fertility.toml",
+      "hash": "fdd686767c411fdb3929b53158418ecc",
+      "size": 469
+    },
+    {
+      "path": "config/sereneseasons/seasons.toml",
+      "hash": "aad50364426880d6df9aae0bb5b6512d",
+      "size": 13661
+    },
+    {
+      "path": "config/silentgear-client.toml",
+      "hash": "464ffffd8540ae11e6447ac7d974e928",
+      "size": 657
+    },
+    {
+      "path": "config/silentgear-common.toml",
+      "hash": "2577299210ad672bed00297495a2fd9b",
+      "size": 8738
+    },
+    {
+      "path": "config/silentgems-common.toml",
+      "hash": "01e432f251a617772932f4e850e9b77a",
+      "size": 568
+    },
+    {
+      "path": "config/simplehats.json",
+      "hash": "c018a899802a96bebfbbfa3a57bfaadb",
+      "size": 105169
+    },
+    {
+      "path": "config/simplehats.json5",
+      "hash": "c89dc0c9e4eca86e19f072c5c5cc4d67",
+      "size": 552
+    },
+    {
+      "path": "config/skinlayers.json",
+      "hash": "04d6f743e89a6fba20ddef26e3fbef9a",
+      "size": 497
+    },
+    {
+      "path": "config/someassemblyrequired-client.toml",
+      "hash": "2689978ce2724ba9c719c463f453befb",
+      "size": 102
+    },
+    {
+      "path": "config/someassemblyrequired-server.toml",
+      "hash": "e11c6c6718479cc580abc4e19726dea6",
+      "size": 819
+    },
+    {
+      "path": "config/spark/config.json",
+      "hash": "fd707ecbb3f9675d81535e88b7712d0b",
+      "size": 117
+    },
+    {
+      "path": "config/spark/tmp/about.txt",
+      "hash": "9fc6c6a5167064013954ece7a7e7626d",
+      "size": 575
+    },
+    {
+      "path": "config/spark/tmp-client/about.txt",
+      "hash": "9fc6c6a5167064013954ece7a7e7626d",
+      "size": 575
+    },
+    {
+      "path": "config/sparsestructures.json5",
+      "hash": "93169e425f1abd93630ca042a0e3a158",
+      "size": 1901
+    },
+    {
+      "path": "config/takesapillage.json",
+      "hash": "9d0cbe15927e96cf9472be37ef55cd80",
+      "size": 281
+    },
+    {
+      "path": "config/terrablender.toml",
+      "hash": "e5d37c4e083369581ea0a4a5b61c16f8",
+      "size": 961
+    },
+    {
+      "path": "config/terralith.json",
+      "hash": "4555bfc348c70b4b33ded045222d4a6a",
+      "size": 212
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-abandoned_grave.json",
+      "hash": "a460a3ada9818a3c22d6e970179613b5",
+      "size": 2446
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-archaeology.json",
+      "hash": "ba844a128d0a53295f414001f5ab0e9c",
+      "size": 1768
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-cat_morning.json",
+      "hash": "193e60b8dd3521ceb31c42d37add6e2b",
+      "size": 1345
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-chest_treasure.json",
+      "hash": "14e429a35970b2fabfd65fb1b43e1d27",
+      "size": 2132
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-lost_treasure.json",
+      "hash": "2528c68432c489bad730b60a6a7e61b3",
+      "size": 3132
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-seeker_rod.json",
+      "hash": "a6931267a366052530bcfe9281e93635",
+      "size": 1403
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-sniffer_digging.json",
+      "hash": "391e5ba59f198ed15226759497af8490",
+      "size": 362
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-undead_boss.json",
+      "hash": "0aad6ff7fa40360c9446f6caa633f12a",
+      "size": 2004
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-pool-undead_mob.json",
+      "hash": "a9d4349d4b52fce74598cdf45911f37a",
+      "size": 1484
+    },
+    {
+      "path": "config/tombstone/loottables/tombstone-table-chest_treasure.json",
+      "hash": "31d21197e9000be50e57cec3ffb29759",
+      "size": 1788
+    },
+    {
+      "path": "config/tombstone/version.info",
+      "hash": "40f8bafce8e7df1e21026a1d507dfd68",
+      "size": 5
+    },
+    {
+      "path": "config/tombstone-client.toml",
+      "hash": "74e8aba1d975d63da13faa2d9d300106",
+      "size": 4112
+    },
+    {
+      "path": "config/tombstone-common.toml",
+      "hash": "0e4200bc578c52cd602175cee83a1621",
+      "size": 9222
+    },
+    {
+      "path": "config/tombstone-server.toml",
+      "hash": "be60f61ea0e85e546922acdfd22e2a8f",
+      "size": 6861
+    },
+    {
+      "path": "config/toms_storage-common.toml",
+      "hash": "2c4c0c5263b769ecf44834abdc630295",
+      "size": 833
+    },
+    {
+      "path": "config/toms_storage-server.toml",
+      "hash": "659280c9ee67e231b41d32bcdcf75605",
+      "size": 1874
+    },
+    {
+      "path": "config/torchmaster.toml",
+      "hash": "9928bfe8dc124e74b53596da13fc8359",
+      "size": 2734
+    },
+    {
+      "path": "config/transition.json",
+      "hash": "31ba5caa4bcc56c2527e5d001e4f0f07",
+      "size": 97
+    },
+    {
+      "path": "config/trashslot-common.toml",
+      "hash": "76136056d9994caf6c59cc6bf04bee1b",
+      "size": 742
+    },
+    {
+      "path": "config/travelersbackpack-client.toml",
+      "hash": "1cb8ecfa3e74613c2bdeceb98ddc5e11",
+      "size": 1566
+    },
+    {
+      "path": "config/travelersbackpack-common.toml",
+      "hash": "4dc48076b740144f51a74d8446faa066",
+      "size": 191
+    },
+    {
+      "path": "config/travelersbackpack-server.toml",
+      "hash": "015e032bdef28e0facb2741ccd9c3b79",
+      "size": 11423
+    },
+    {
+      "path": "config/trender.json",
+      "hash": "c449ad0a8d190858ec253ed1bc75e05d",
+      "size": 47
+    },
+    {
+      "path": "config/utilitarian-client.toml",
+      "hash": "9c57d294ae94ecfb5808ea6fdd06f800",
+      "size": 122
+    },
+    {
+      "path": "config/utilitarian-common.toml",
+      "hash": "7cf5771dd7e6a3792a256bf72ce2bbfd",
+      "size": 992
+    },
+    {
+      "path": "config/utilitarian-server.toml",
+      "hash": "b034557ba3107452d256036bbea40d56",
+      "size": 1874
+    },
+    {
+      "path": "config/vinery.toml",
+      "hash": "c30257ee05e4b8892cc652f5ae36338b",
+      "size": 3155
+    },
+    {
+      "path": "config/visualworkbench-client.toml",
+      "hash": "426c0bb239b2dff04ce2ca5a648cc180",
+      "size": 449
+    },
+    {
+      "path": "config/visualworkbench-common.toml",
+      "hash": "68debf055c314a04171fd2d6b2411432",
+      "size": 344
+    },
+    {
+      "path": "config/voicechat/category-volumes.properties",
+      "hash": "b111608f2ef12c6aca40e9fd258517a2",
+      "size": 44
+    },
+    {
+      "path": "config/voicechat/player-volumes.properties",
+      "hash": "dd08e98b101cd17c341023fa1a9b30e5",
+      "size": 42
+    },
+    {
+      "path": "config/voicechat/translations.properties",
+      "hash": "acd70e3e0973ba6d8200c0ebf8b25bc0",
+      "size": 1168
+    },
+    {
+      "path": "config/voicechat/username-cache.json",
+      "hash": "99914b932bd37a50b983c5e7c90ae93b",
+      "size": 2
+    },
+    {
+      "path": "config/voicechat/voicechat-client.properties",
+      "hash": "c4c9ebce3075a12e77ed88959fdc47e5",
+      "size": 4958
+    },
+    {
+      "path": "config/voicechat/voicechat-server.properties",
+      "hash": "eec47438a8c8cbf99de49f1634d894f8",
+      "size": 3013
+    },
+    {
+      "path": "config/waterframes-client.toml",
+      "hash": "52da0082ed9350b63a8e75d15bde014b",
+      "size": 995
+    },
+    {
+      "path": "config/waterframes-server.toml",
+      "hash": "d03ccb468a089b82e5b69ee5cf59d198",
+      "size": 4554
+    },
+    {
+      "path": "config/watermedia/custom_vlc_path.txt",
+      "hash": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "path": "config/watut-client.toml",
+      "hash": "db5aa2742613780374f4f5906a6d7820",
+      "size": 3378
+    },
+    {
+      "path": "config/watut-common.toml",
+      "hash": "68ae4e69c2dc278f0952922b0e9c2eda",
+      "size": 161
+    },
+    {
+      "path": "config/watut-item-arm-adjustments.json",
+      "hash": "25925ecf5d13afcb55b2d4fcff81361c",
+      "size": 3367
+    },
+    {
+      "path": "config/watut-server.toml",
+      "hash": "2be9f8a148f94c5621d6048db3b78f38",
+      "size": 2893
+    },
+    {
+      "path": "config/worldedit/worldedit.properties",
+      "hash": "5d4fbd6796d6f689083492513cbaa3f4",
+      "size": 2500
+    },
+    {
+      "path": "config/wover/cached.json",
+      "hash": "18fb990f0ebbeaa2cb45a266276fd746",
+      "size": 138
+    },
+    {
+      "path": "config/wover/client.json",
+      "hash": "bfa0d5dbe2233224cfa1303d1c1a4013",
+      "size": 311
+    },
+    {
+      "path": "config/wover/main.json",
+      "hash": "d9045517ae168b75cd4b4d9153dbfea0",
+      "size": 158
+    },
+    {
+      "path": "config/yacl.json5",
+      "hash": "9378f7cef65c5208431350700cf83a11",
+      "size": 250
+    }
+  ]
+}
