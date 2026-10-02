@@ -6,15 +6,24 @@ const GITHUB_USER = 'Lujoko';
 const GITHUB_REPO = 'Lacraland';
 const BRANCH = 'main';
 
+// --- ARCHIVOS EXTERNOS PESADOS ---
+const EXTERNAL_FILES = [
+    {
+        path: 'mods/watermedia_binaries-3.0.0.6.jar',
+        url: 'https://www.dropbox.com/scl/fi/5nxvs6h78rqscacxbkwm2/watermedia_binaries-3.0.0.6.jar?rlkey=1mfg4e16jn52d3nzhzm6n7vhf&st=3f2bgfb8&dl=1'
+    }
+];
+
 // --- LISTA DE IGNORADOS ---
-// El launcher NUNCA tocará ni descargará ni borrará nada que esté en estas carpetas
 const IGNORE_PATTERNS = [
-    /^config\/voicechat\//,
-    /^config\/journeymap\//,
-    /^config\/jei\//,
-    /^config\/inventoryprofilesnext\//,
-    /^config\/InventoryHUD\//,
-    /^config\/quickskin_preferences\.json/
+    /^config\/voicechat\//i,
+    /^config\/journeymap\//i,
+    /^config\/jei\//i,
+    /^config\/inventoryprofilesnext\//i,
+    /^config\/inventoryhud/i,
+    /^config\/quickskin_preferences\.json/i,
+    /^mods\/local-.*\.jar/i,
+    /^mods\/watermedia_binaries-3\.0\.0\.6\.jar/i // <--- Protege el mod pesado
 ];
 
 function isIgnored(relativePath) {
@@ -119,6 +128,27 @@ async function syncModpack(gameDir, onProgress) {
             responseType: 'arraybuffer'
         });
         await fs.writeFile(destPath, res.data);
+    }
+
+// --- NUEVO: Descarga de archivos externos (Mods pesados) ---
+    for (const extFile of EXTERNAL_FILES) {
+        const localExtPath = path.join(gameDir, extFile.path);
+        // Solo lo descarga si no existe en la PC del jugador
+        if (!fs.existsSync(localExtPath)) {
+            if (onProgress) onProgress(`Descargando mod pesado (137MB), espera por favor...`);
+            try {
+                const extRes = await axios({
+                    url: extFile.url,
+                    method: 'GET',
+                    responseType: 'arraybuffer'
+                });
+                await fs.ensureDir(path.dirname(localExtPath));
+                await fs.writeFile(localExtPath, extRes.data);
+                console.log(`[SYNC] Archivo externo descargado: ${extFile.path}`);
+            } catch (extErr) {
+                console.error(`[SYNC] Error al descargar archivo externo ${extFile.path}:`, extErr.message);
+            }
+        }
     }
 
     // 4. Sincronizar archivo de controles options.txt mediante bandera
